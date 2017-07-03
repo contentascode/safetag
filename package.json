@@ -1,0 +1,26 @@
+{
+  "name": "safetag",
+  "version": "1.0.0",
+  "description": "SAFETAG content as code command line tool",
+  "bin": {
+    "safetag": "node_modules/.bin/content",
+    "safetag-init": "node_modules/.bin/content-init",
+    "safetag-start": "node_modules/.bin/content-start"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentascode/safetag.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/contentascode/safetag/issues"
+  },
+  "homepage": "https://github.com/contentascode/safetag#readme",
+  "dependencies": {
+    "docsmith": "^0.3.0"
+  }
+}

@@ -1,0 +1,9 @@
+# repos are a package name space mapping mechanism to enable using an `@maintainer` syntax
+# internally while interoperating with existing underlying npm package download schemes:
+#  - use of non registry published packages on a git or http endpoint.
+#  - use of private registry.
+---
+repos:
+  '~/.content/packages/@safetag/toolkit': safetag-toolkit@1.0.0
+  # '~/.content/packages/@safetag/guide': safetag-guide@1.0.0
+  # '~/.content/packages/@safetag/curricula': safetag-curricula@1.0.0
