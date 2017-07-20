@@ -13,7 +13,7 @@ install:
   - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
   - sudo dpkg -i $DEB pandoc-1.19.2.1-1-amd64.deb
   - npm install -g npm
-  - npm i -g docsmith@0.4.10
+  - npm i -g docsmith@0.4.11
   - npm i -g
 
 script:
@@ -24,7 +24,7 @@ script:
   - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
   - DEBUG=* safetag link activities ~/.content/build/@safetag/migrate/activities
-  - DEBUG=* safetag start --debug toolkit
+  - DEBUG=* safetag start --debug --baseurl /safetag/@safetag/toolkit toolkit
 
 # addons:
 #   apt:
