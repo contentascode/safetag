@@ -1,6 +1,6 @@
 {
   "name": "safetag",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "SAFETAG Toolkit",
   "bin": {
     "safetag": "../../../bin/content",
