@@ -1,26 +1,26 @@
-language: r
-pandoc_version: 1.17
-env:
-  - TRAVIS_NODE_VERSION="7"
+language: node_js
+node_js:
+  - '7'
 
 install:
-  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
-  - echo $PATH
+  # - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
+  # - echo $PATH
+  - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+  - sudo dpkg -i $DEB pandoc-1.19.2.1-1-amd64.deb
+  - npm i -g docsmith
   - npm i -g
 
 script:
   - git clone https://github.com/SAFETAG/SAFETAG
-  - echo $PATH
-  - ls -la /home/travis/.nvm/versions/node/v7.10.1/bin
   - DEBUG=* safetag init
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
   - DEBUG=* safetag link activities ~/.content/build/@safetag/migrate/activities
   - DEBUG=* safetag start --debug toolkit
 
-addons:
-  apt:
-    packages:
-    - pandoc
+# addons:
+#   apt:
+#     packages:
+#     - pandoc
 deploy:
   local_dir: ~/.content/build/@safetag/toolkit
   provider: pages

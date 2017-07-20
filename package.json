@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/contentascode/safetag/issues"
   },
-  "homepage": "https://github.com/contentascode/safetag#readme",
-  "dependencies": {
-    "docsmith": "^0.4.1"
-  }
+  "homepage": "https://github.com/contentascode/safetag#readme"
 }
