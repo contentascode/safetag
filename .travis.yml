@@ -23,7 +23,7 @@ script:
   # Fix missing symlinks manually
   - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
-  - DEBUG=* safetag start --debug --baseurl /safetag/@safetag/toolkit --package activities ~/.content/build/@safetag/migrate/activities toolkit
+  - DEBUG=* safetag start --debug --baseurl /safetag/@safetag/toolkit --package activities:~/.content/build/@safetag/migrate/activities toolkit
 
 # addons:
 #   apt:
