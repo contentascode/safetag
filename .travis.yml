@@ -18,8 +18,7 @@ install:
 
 script:
   - git clone https://github.com/SAFETAG/SAFETAG
-  - mkdir workspace && cd workspace && DEBUG=* safetag init --defaults && pwd
-  - pwd
+  - mkdir workspace && cd workspace && DEBUG=* safetag init --defaults && cd ..
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
   - DEBUG=* safetag link activities ~/.content/build/@safetag/migrate/activities
   - DEBUG=* safetag start --debug toolkit
