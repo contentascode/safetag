@@ -1,6 +1,11 @@
 language: node_js
 node_js:
+  - '5'
+  - '6'
   - '7'
+os:
+- linux
+- osx
 
 install:
   # - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
@@ -12,7 +17,8 @@ install:
 
 script:
   - git clone https://github.com/SAFETAG/SAFETAG
-  - DEBUG=* safetag init
+  - mkdir workspace && cd workspace && DEBUG=* safetag init --defaults && pwd
+  - pwd
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
   - DEBUG=* safetag link activities ~/.content/build/@safetag/migrate/activities
   - DEBUG=* safetag start --debug toolkit
