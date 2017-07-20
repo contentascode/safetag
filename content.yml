@@ -4,7 +4,7 @@
 #  - use of private registry.
 ---
 packages:
-  'safetag-toolkit': safetag-toolkit@^0.1.4
+  'safetag-toolkit': safetag-toolkit@^0.1.5
   # '@safetag/toolkit': contentascode/safetag-toolkit#semver:^0.1.0
   # '@safetag/guide': safetag-guide@1.0.0
   # '@safetag/curricula': safetag-curricula@1.0.0
