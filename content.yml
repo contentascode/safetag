@@ -1,9 +1,10 @@
-# repos are a package name space mapping mechanism to enable using an `@maintainer` syntax
-# internally while interoperating with existing underlying npm package download schemes:
-#  - use of non registry published packages on a git or http endpoint.
+# package name space mapping mechanism using an `@maintainer` scope syntax
+# uses underlying npm package download schemes and semver to allow:
+#  - use of non registry published packages on a git or https endpoint.
 #  - use of private registry.
 ---
-repos:
-  '~/.content/packages/@safetag/toolkit': safetag-toolkit@1.0.0
-  # '~/.content/packages/@safetag/guide': safetag-guide@1.0.0
-  # '~/.content/packages/@safetag/curricula': safetag-curricula@1.0.0
+packages:
+  '@safetag/toolkit': contentascode/safetag-toolkit#semver:^0.1.0
+  # '@safetag/toolkit': safetag-toolkit@1.0.0
+  # '@safetag/guide': safetag-guide@1.0.0
+  # '@safetag/curricula': safetag-curricula@1.0.0

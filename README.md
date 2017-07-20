@@ -1,8 +1,14 @@
 # SAFETAG Content as Code CLI tool
 
+SAFETAG is a curricula, a methodology, and a framework for security auditors working with advocacy groups.
+
 Command line tool to manage content workflows for the SAFETAG project. It uses the content as code framework.
 
 ## Install
+
+Prerequisites:
+ - node v4
+ - npm v5.0.4?
 
 ```
 npm i -g safetag
@@ -27,7 +33,7 @@ This will start the preview server and watch your local files for changes. You c
 ## Plan an Audit
 
 Follow the instructions on the toolkit homepage. The steps will be:
- - Start from scratch or the minumum audit scenario provided.
+ - Start from scratch or the minimum audit scenario provided.
  - Add and configure activities for your planned audit.
  - Download an `audit.yml` file and drop it in the `workspace/audits` folder.
 
