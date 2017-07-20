@@ -38,3 +38,5 @@ deploy:
 branches:
   only:
   - master
+  except:
+    - /^v[0-9]/
