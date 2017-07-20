@@ -20,6 +20,8 @@ script:
   - mkdir workspace && cd workspace
   - DEBUG=* safetag init --defaults
   - git clone https://github.com/SAFETAG/SAFETAG
+  # Fix missing symlinks manually
+  - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
   - DEBUG=* safetag link activities ~/.content/build/@safetag/migrate/activities
   - DEBUG=* safetag start --debug toolkit
