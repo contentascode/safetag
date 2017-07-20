@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/contentascode/safetag#readme",
   "dependencies": {
-    "docsmith": "^0.4.0"
+    "docsmith": "^0.4.1"
   }
 }
