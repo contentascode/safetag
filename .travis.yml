@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  # - '5'
-  # - '6'
+  - '5'
+  - '6'
   - '7'
 os:
 - linux
-# - osx
+- osx
 
 install:
   # - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
