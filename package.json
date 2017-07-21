@@ -5,6 +5,7 @@
   "bin": {
     "safetag": "../../../bin/content",
     "safetag-init": "../../../bin/content-init",
+    "safetag-link": "../../../bin/content-link",
     "safetag-start": "../../../bin/content-start"
   },
   "scripts": {

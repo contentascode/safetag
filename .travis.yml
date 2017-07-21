@@ -13,7 +13,7 @@ install:
   - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
   - sudo dpkg -i $DEB pandoc-1.19.2.1-1-amd64.deb
   - npm install -g npm
-  - npm i -g docsmith@0.4.12
+  - npm i -g docsmith@0.5.0
   - npm i -g
 
 script:
@@ -23,7 +23,9 @@ script:
   # Fix missing symlinks manually
   - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
   - DEBUG=* safetag start --source $(pwd)/SAFETAG migrate
-  - DEBUG=* safetag start --debug --baseurl /safetag/@safetag/toolkit --package activities:~/.content/build/@safetag/migrate/activities toolkit
+  # Link migrated activities as a content package (use force since for now there is a default activities package in safetag-toolkit)
+  - DEBUG=* safetag link activities:~/.content/build/@safetag/migrate/activities --force
+  - DEBUG=* safetag start --debug --baseurl /safetag/@safetag/toolkit toolkit
 
 # addons:
 #   apt:
