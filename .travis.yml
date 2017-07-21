@@ -11,7 +11,7 @@ install:
   # - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
   # - echo $PATH
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb; fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo dpkg -i $DEB pandoc-1.19.2.1-1-amd64.deb; fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo dpkg -i pandoc-1.19.2.1-1-amd64.deb; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install pandoc; fi
   - npm install -g npm
   - npm i -g docsmith@0.5.3
@@ -25,7 +25,7 @@ script:
   - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
   - safetag start --source $(pwd)/SAFETAG/en migrate
   # Link migrated content as content packages (use force for activities since for now there is a default activities package in safetag-toolkit)
-  - safetag link activities:~/.content/build/@safetag/migrate/activities --force
+  - safetag link @safetag/toolkit/activities:~/.content/build/@safetag/migrate/activities --force
   - safetag link @safetag/toolkit/references:~/.content/build/@safetag/migrate/references
   - safetag link @safetag/toolkit/methods:~/.content/build/@safetag/migrate/methods
   - safetag link @safetag/toolkit/document_matter:~/.content/build/@safetag/migrate/document_matter
