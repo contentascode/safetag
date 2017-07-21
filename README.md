@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/contentascode/safetag.svg)](https://travis-ci.org/contentascode/safetag) [![npm](https://img.shields.io/npm/dt/docsmith.svg)](https://www.npmjs.com/package/docsmith) [![Code Climate](https://img.shields.io/codeclimate/github/contentascode/safetag.svg)](https://codeclimate.com/github/contentascode/safetag) [![GitHub license](https://img.shields.io/github/license/contentascode/safetag.svg)](https://github.com/contentascode/safetag/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/contentascode/safetag.svg)](https://travis-ci.org/contentascode/safetag) [![npm](https://img.shields.io/npm/dt/safetag.svg)](https://www.npmjs.com/package/safetag) [![Code Climate](https://img.shields.io/codeclimate/github/contentascode/safetag.svg)](https://codeclimate.com/github/contentascode/safetag) [![GitHub license](https://img.shields.io/github/license/contentascode/safetag.svg)](https://github.com/contentascode/safetag/blob/master/LICENSE)
 
 # SAFETAG Content as Code CLI tool
 
