@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-  - '5'
   - '6'
   - '7'
+  - '8'
 os:
 - linux
 - osx
@@ -10,8 +10,9 @@ os:
 install:
   # - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
   # - echo $PATH
-  - wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
-  - sudo dpkg -i $DEB pandoc-1.19.2.1-1-amd64.deb
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; sudo dpkg -i $DEB pandoc-1.19.2.1-1-amd64.deb
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; brew install pandoc
   - npm install -g npm
   - npm i -g docsmith@0.5.3
   - npm i -g
@@ -42,6 +43,8 @@ deploy:
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
     branch: master
+    condition: $TRAVIS_OS_NAME = linux
+    node: '7'
 
 branches:
   only:
