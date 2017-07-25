@@ -103,25 +103,35 @@ In more details:
  - `:[](name.md)` this will only match a file called `name.md` in the same directory and will transclude it.
  - `:[](./folder/name.md)` this will only match a file in the `folder` subdirectory of the content's directory.
 
+<!-- slide -->
+
 ### Overrides
 
 Overrides allow to modify published content with your personal customisation with minimum changes and making it easy to later contribute back these changes to the publication.
 
+<!-- slide -->
+
 Overrides are enabled by `workspaces`. A workspace is a dynamic representation of the content which is kept connected to its source publication (allowing updates and making it easier to contribute back), but which is optimised for content authoring (hiding technical details about rendering), content editing (SOON - with version control and collaborative features).
+
+<!-- slide -->
 
 Here's a basic override example:
 
 ```
    .
-   ├── index.md            // Index
-   └── :chapters/          // `:` means that the chapters are from a content package.
-       ├── chapter_1.md    // as a consequence these chapters are linked
-       └── chapter_2.md    // and should not be modified.
+   ├── index.md          // Index
+   └── :chapters/        // `:` means that the chapters are from a content package.
+       ├── chapter_1.md  // as a consequence these chapters are linked
+       └── chapter_2.md  // and should not be modified.
 ```
+
+<!-- slide -->
 
 In order to override it with your own chapter 2, you need to :
  - create a `chapters` folder in your workspace
  - create a `chapter_2.md` file in this folder.
+
+ <!-- slide -->
 
 This is what it will look like:
 
@@ -134,5 +144,7 @@ This is what it will look like:
        ├── chapter_1.md    //
        └── chapter_2.md    // This is now masked.
 ```
+
+<!-- slide -->
 
 This makes it easy to start working on your own versions of content without having to worry about making irreversible changes. This is also setup (SOON) to deal with version control for you so that every change is properly tracked and facilitate content packaging so that it's easy to contribute back.
