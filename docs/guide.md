@@ -1,16 +1,46 @@
+---
+presentation:
+    progress: true
+---
+
 <!-- slide -->
-# SAFETAG Toolkit user manual
+# SAFETAG Toolkit
+#### Getting Started Guide
+
+<!-- slide vertical:true -->
+### About this presentation
+
+This presentation is also available as a markdown guide and we welcome contributions!
+
+You can view a commented video of this presentation at:
+ - https://...
+
+<!-- slide -->
+
+### Topics
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Concepts](#concepts)
+- [Install](#install)
+- [Launch](#launch)
+- [Edit](#edit)
+- [Organise](#organise)
+- [Contribute](#contribute)
+- [Publish](#publish)
+- [Next](#next)
+
+<!-- /TOC -->
 
 <!-- slide -->
 ## Concepts
 
 Separate content from code. 3 main things remain
-       - metadata
-       - transclusion
-       - markdown
+   - metadata
+   - transclusion
+   - markdown
 
 <!-- slide -->
-## Getting started
+## Install
 
  - Change your current directory to where you'd like your workspace to be
  - Use `safetag init` only on first use.
@@ -22,18 +52,25 @@ Separate content from code. 3 main things remain
     - Start editing content in the workspace
 
 <!-- slide -->
-## Atom
+## Launch
+
+<!-- slide -->
+## Edit
+
+<!-- slide vertical:true -->
+
+### Atom
 
 pandoc conf in markdown enhanced preview:  `markdown_github+yaml_metadata_block+definition_lists+markdown_in_html_blocks+grid_tables`
 
-<!-- slide -->
-## Syntax
+<!-- slide vertical:true -->
+### Syntax
 
 Refer to a Markdown manual for the basics of the syntax.
 
 There is some special syntax.
 
-<!-- slide -->
+<!-- slide vertical:true -->
 ### Transclusion
 
 Transclusion is a way to reference content snippets (or more) into a document.
@@ -53,11 +90,11 @@ Will be rendered as:
 Hi Alice!
 ```
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 This helps make content more reusable since the snippet's content can be transcluded several times and updating the snippet will automatically update all the locations where it is transcluded.
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 We say that the "content" is "dependent" on the transcluded "content".
 
@@ -65,7 +102,7 @@ We say that the "content" is "dependent" on the transcluded "content".
 
 In the easiest case, `link` is the name of a file in the same directory, but it can also be used with the following type of links:
 
-<!-- slide -->
+<!-- slide vertical:true -->
 #### Smart links
 
 Smart links are easy to write and should "do the right thing" so you can focus on your content. The link resolution mechanism is described in more details below. It follows the general principles:
@@ -74,7 +111,7 @@ Smart links are easy to write and should "do the right thing" so you can focus o
  - **Adaptable**: They should not need to be changes when overriding content (See [Overrides](#overrides))
  - **
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 In more details:
  - `:[](name)` - This will match the first of the following cases:
@@ -96,24 +133,24 @@ In more details:
        - a folder called `name` with and `index` or `index.md` file
        - a folder called `name` with no index and it will transclude all files in the folder.
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 #### Explicit links
 
  - `:[](name.md)` this will only match a file called `name.md` in the same directory and will transclude it.
  - `:[](./folder/name.md)` this will only match a file in the `folder` subdirectory of the content's directory.
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 ### Overrides
 
 Overrides allow to modify published content with your personal customisation with minimum changes and making it easy to later contribute back these changes to the publication.
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 Overrides are enabled by `workspaces`. A workspace is a dynamic representation of the content which is kept connected to its source publication (allowing updates and making it easier to contribute back), but which is optimised for content authoring (hiding technical details about rendering), content editing (SOON - with version control and collaborative features).
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 Here's a basic override example:
 
@@ -125,13 +162,13 @@ Here's a basic override example:
        └── chapter_2.md  // and should not be modified.
 ```
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 In order to override it with your own chapter 2, you need to :
  - create a `chapters` folder in your workspace
  - create a `chapter_2.md` file in this folder.
 
- <!-- slide -->
+<!-- slide vertical:true -->
 
 This is what it will look like:
 
@@ -145,6 +182,24 @@ This is what it will look like:
        └── chapter_2.md    // This is now masked.
 ```
 
-<!-- slide -->
+<!-- slide vertical:true -->
 
 This makes it easy to start working on your own versions of content without having to worry about making irreversible changes. This is also setup (SOON) to deal with version control for you so that every change is properly tracked and facilitate content packaging so that it's easy to contribute back.
+
+<!-- slide -->
+
+## Organise
+
+<!-- slide -->
+
+## Contribute
+
+<!-- slide -->
+
+## Publish
+
+<!-- slide -->
+
+## Next
+
+ - Star us on Github [![GitHub stars](https://img.shields.io/github/stars/contentascode/safetag.svg?style=social&label=Star)]()
