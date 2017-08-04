@@ -22,7 +22,7 @@ The SAFETAG framework includes:
 ## Documentation
 
 The documentation includes:
- - A [Getting Started Guide](guide.md) - (view as an [online presentation](#))
+ - A [Getting Started Guide](guide.md) - (view as an [online presentation](https://cdn.rawgit.com/contentascode/safetag/d0f50a3e/docs/guide.html))
  - A [User Manual](manual.md)
  - A [website about the content as code framework concepts](http://iilab.github.io/contentascode/) - The SAFETAG Toolkit uses the content as code framework and `docsmith`.
 
