@@ -6,6 +6,23 @@ SAFETAG is a curricula, a methodology, and a framework for security auditors wor
 
 Command line tool to manage content workflows for the SAFETAG project. It uses the content as code framework.
 
+<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:0 orderedList:0 -->
+
+- [Getting Started Presentation](https://cdn.rawgit.com/contentascode/safetag/d0f50a3e/docs/guide.html)
+- [Features](#features)
+- [Install](#install)
+- [Usage](#usage)
+
+<!-- /TOC -->
+
+## Features
+
+This toolkit currently enables users to:
+ - Deploy and navigate a local version of the SAFETAG content
+ - Customise SAFETAG content locally and preview changes including
+    - Modifying the taxonomy
+    - Modifying activities
+
 ## Install
 
 Prerequisites:
@@ -33,8 +50,9 @@ This will prompt you with a few questions about configuration. The defaults shou
 safetag start
 ```
 
-This will start the preview server and watch your local files for changes. You can open your browser at `http://localhost:3000` to browse the toolkit.
+This will start the preview server and watch your local files for changes. You can open your browser at `http://localhost:8081` to browse the toolkit.
 
+<!--
 ## Plan an Audit
 
 Follow the instructions on the toolkit homepage. The steps will be:
@@ -74,3 +92,5 @@ You can contribute back to the SAFETAG community of practice in various ways.
 ### Minumum Audit scenario package
 
 You can use
+
+-->

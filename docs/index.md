@@ -4,7 +4,7 @@ SAFETAG is a curricula, a methodology, and a framework for security auditors wor
 
 ## Features
 
-This framework currently enables users to:
+This toolkit currently enables users to:
  - Deploy and navigate a local version of the SAFETAG content
  - Customise SAFETAG content locally and preview changes including
     - Modifying the taxonomy
@@ -23,7 +23,6 @@ The SAFETAG framework includes:
 
 The documentation includes:
  - A [Getting Started Guide](guide.md) - (view as an [online presentation](https://cdn.rawgit.com/contentascode/safetag/d0f50a3e/docs/guide.html))
- - A [User Manual](manual.md)
  - A [website about the content as code framework concepts](http://iilab.github.io/contentascode/) - The SAFETAG Toolkit uses the content as code framework and `docsmith`.
 
 ## Next
