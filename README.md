@@ -12,9 +12,6 @@ Prerequisites:
  - [node v6](https://nodejs.org/en/)
  - npm v5.3.0
    -  `npm i -g npm`
- - pandoc 1.17
-   - Debian/Ubuntu `wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb && sudo dpkg -i pandoc-1.19.2.1-1-amd64.deb`
-   - OSX : `brew install pandoc`
  - docsmith v0.5.3:
    -  `npm i -g docsmith`
 
