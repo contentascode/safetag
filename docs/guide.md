@@ -10,9 +10,9 @@ presentation:
 <!-- slide vertical:true -->
 ### About this presentation
 
-This presentation is both a [markdown guide](https://github.com/contentascode/safetag/blob/master/docs/guide.md) and an [online presentation]() and we welcome contributions!
+This presentation is both a [markdown guide](https://github.com/contentascode/safetag/blob/master/docs/guide.md) and an [online presentation](https://rawgit.com/contentascode/safetag/38d8526a/docs/guide.html) and we welcome [contributions](github.com/contentascode/safetag)!
 
-You can find links to a printable version and video version of this presentation at github.com/contentascode/safetag
+You can also find a [video version](https://www.youtube.com/watch?v=tf4WTG7nvoU) of this presentation.
 
 <!-- slide -->
 
