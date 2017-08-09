@@ -10,7 +10,7 @@ presentation:
 <!-- slide vertical:true -->
 ### About this presentation
 
-This presentation is also available as a markdown guide and we welcome contributions!
+This presentation is both a [markdown guide](https://github.com/contentascode/safetag/blob/master/docs/guide.md) and an [online presentation]() and we welcome contributions!
 
 You can find links to a printable version and video version of this presentation at github.com/contentascode/safetag
 
@@ -94,7 +94,7 @@ Use `safetag init` only on first use.
 ## Edit
 
  - Bring your own favorite editor.
- -
+ - Press the _down arrow_ key for some tips.
 
 <!-- slide vertical:true -->
 
