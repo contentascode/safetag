@@ -224,10 +224,10 @@ This makes it easy to start working on your own versions of content without havi
 
  - Clone
    - `https://github.com/contentascode/safetag-toolkit`
- - Unlink default package
-   - `safetag link @safetag --unlink`
+ - Backup default package
+   - `mv ~/.content/packages/safetag-toolkit ~/.content/packages/safetag-toolkit.bak`
  - Link cloned package
-   - `safetag link @safetag:~/dev/safetag/@safetag/safetag-toolkit/content`
+   - `ln -s  ~/dev/safetag/@safetag/safetag-toolkit ~/.content/packages/safetag-toolkit`
 
 <!-- slide -->
 
