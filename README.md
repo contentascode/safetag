@@ -9,7 +9,7 @@ Command line tool to manage content workflows for the SAFETAG project. It uses t
 <!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:0 orderedList:0 -->
 
 - [Documentation](/docs/index.md)
-  - [Getting Started](/docs/guide.md) ([video](https://www.youtube.com/watch?v=tf4WTG7nvoU) - [presentation](https://rawgit.com/contentascode/safetag/ad60a323/docs/guide.html)
+  - [Getting Started](/docs/guide.md) ([video](https://www.youtube.com/watch?v=tf4WTG7nvoU) - [presentation](https://rawgit.com/contentascode/safetag/ad60a323/docs/guide.html))
 - [Features](#features)
 - [Install](#install)
 - [Usage](#usage)
