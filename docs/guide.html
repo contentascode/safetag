@@ -2378,14 +2378,14 @@ div.note {
 <li><code>https://github.com/contentascode/safetag-toolkit</code></li>
 </ul>
 </li>
-<li>Unlink default package
+<li>Backup default package
 <ul>
-<li><code>safetag link @safetag --unlink</code></li>
+<li><code>mv ~/.content/packages/safetag-toolkit ~/.content/packages/safetag-toolkit.bak</code></li>
 </ul>
 </li>
 <li>Link cloned package
 <ul>
-<li><code>safetag link @safetag:~/dev/safetag/@safetag/safetag-toolkit/content</code></li>
+<li><code>ln -s ~/dev/safetag/@safetag/safetag-toolkit ~/.content/packages/safetag-toolkit</code></li>
 </ul>
 </li>
 </ul>
