@@ -20,15 +20,15 @@ install:
 script:
   - mkdir workspace && cd workspace
   - safetag init --defaults
-  - git clone https://github.com/SAFETAG/SAFETAG
+  # - git clone https://github.com/SAFETAG/SAFETAG
   # Fix missing symlinks manually
-  - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
-  - safetag start --source $(pwd)/SAFETAG/en migrate
+  # - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
+  # - safetag start --no-watch --source $(pwd)/SAFETAG/en migrate
   # Link migrated content as content packages (use force for activities since for now there is a default activities package in safetag-toolkit)
-  - safetag link @safetag/toolkit/activities:~/.content/build/@safetag/migrate/activities --force
-  - safetag link @safetag/toolkit/references:~/.content/build/@safetag/migrate/references
-  - safetag link @safetag/toolkit/methods:~/.content/build/@safetag/migrate/methods
-  - safetag link @safetag/toolkit/document_matter:~/.content/build/@safetag/migrate/document_matter
+  # - safetag link @safetag/toolkit/activities:~/.content/build/@safetag/migrate/activities --force
+  # - safetag link @safetag/toolkit/references:~/.content/build/@safetag/migrate/references
+  # - safetag link @safetag/toolkit/methods:~/.content/build/@safetag/migrate/methods
+  # - safetag link @safetag/toolkit/document_matter:~/.content/build/@safetag/migrate/document_matter
   # Build website
   - safetag start --no-watch --debug --baseurl /safetag/@safetag/toolkit toolkit
 
