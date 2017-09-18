@@ -31,10 +31,6 @@ script:
   # Build website
   - safetag start --no-watch --debug --baseurl /safetag/@safetag/toolkit toolkit
 
-# addons:
-#   apt:
-#     packages:
-#     - pandoc
 deploy:
   local_dir: /home/travis/.content/build
   provider: pages
