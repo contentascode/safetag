@@ -20,7 +20,7 @@ install:
 script:
   - mkdir workspace && cd workspace
   - safetag init --defaults
-  - git clone https://github.com/jmatsushita/SAFETAG
+  - git clone https://github.com/SAFETAG/SAFETAG
   # Fix missing symlinks manually
   - safetag start --no-watch --source $(pwd)/SAFETAG/en migrate
   # Link migrated content as content packages (use force for activities since for now there is a default activities package in safetag-toolkit)
