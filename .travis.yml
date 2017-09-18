@@ -21,6 +21,7 @@ script:
   - mkdir workspace && cd workspace
   - safetag init --defaults
   # - git clone https://github.com/SAFETAG/SAFETAG
+  - git clone https://github.com/jmatsushita/SAFETAG
   # Fix missing symlinks manually
   # - rm SAFETAG/es/reporting/content && rm SAFETAG/en/document_matter/content && rm SAFETAG/es/document_matter/content && rm SAFETAG/en/document_matter/en
   # - safetag start --no-watch --source $(pwd)/SAFETAG/en migrate
