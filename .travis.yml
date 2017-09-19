@@ -22,7 +22,7 @@ script:
   - safetag init --defaults
   - git clone https://github.com/SAFETAG/SAFETAG
   # Fix missing symlinks manually
-  - safetag start --no-watch --source $(pwd)/SAFETAG/en migrate
+  - safetag start --clean --no-watch --source $(pwd)/SAFETAG/en migrate
   # Link migrated content as content packages (use force for activities since for now there is a default activities package in safetag-toolkit)
   - safetag link @safetag/toolkit/activities:~/.content/build/@safetag/migrate/activities --force
   - safetag link @safetag/toolkit/references:~/.content/build/@safetag/migrate/references --force
