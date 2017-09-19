@@ -5,10 +5,12 @@ SAFETAG is a curricula, a methodology, and a framework for security auditors wor
 ## Features
 
 This toolkit currently enables users to:
- - Deploy and navigate a local version of the SAFETAG content
+ - Deploy and navigate a local version of the SAFETAG content. (See [Getting Started Guide](guide.md))
  - Customise SAFETAG content locally and preview changes including
     - Modifying the taxonomy
     - Modifying activities
+    - Contribute back your changes. (See [Contribution](contribution.md))
+- Migrate content from the existing [SAFETAG](https://github.com/SAFETAG/SAFETAG) repo. (See [Migration](migration.md))
 
 ## Components
 
