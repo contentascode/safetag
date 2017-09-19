@@ -1,14 +1,18 @@
 # Contribution
 
-In order to contribute back your changes there are several approaches.
+In order to contribute back your changes there are several approaches:
+ - [Simple edits](#simple-content-edits) can be done through the edit links on each page and the github website.
+ - More involved content edits or contribution to the static build code require
 
-## Simple edits
+## Simple content edits
 
 A simple edit should be easy to contribute by relying on the edit links provided on the [toolkit website](https://contentascode.github.io/safetag/@safetag/toolkit/) and Github's own collaboration features. The process will be as follow:
  - Click an edit link on the toolkit website at https://contentascode.github.io/safetag/@safetag/toolkit/
  -
 
-## Create your fork
+##
+
+### Create your fork
 
 Follow the following steps:
 - Assuming you have a github account, create a fork of the `safetag-toolkit` repository.
