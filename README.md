@@ -6,23 +6,30 @@ SAFETAG is a curricula, a methodology, and a framework for security auditors wor
 
 Command line tool to manage content workflows for the SAFETAG project. It uses the content as code framework.
 
-<!-- TOC depthFrom:2 depthTo:2 withLinks:1 updateOnSave:0 orderedList:0 -->
-
-- [Documentation](/docs/index.md)
-  - [Getting Started](/docs/guide.md) ([video](https://www.youtube.com/watch?v=tf4WTG7nvoU) - [presentation](https://rawgit.com/contentascode/safetag/ad60a323/docs/guide.html))
 - [Features](#features)
 - [Install](#install)
 - [Usage](#usage)
-
-<!-- /TOC -->
+- [Links](#links)
 
 ## Features
+
+A quick walk through how the toolkit works and its basic features.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Fy71AbOaCAk/0.jpg)](https://youtu.be/Fy71AbOaCAk)
 
 This toolkit currently enables users to:
  - Deploy and navigate a local version of the SAFETAG content
  - Customise SAFETAG content locally and preview changes including
     - Modifying the taxonomy
     - Modifying activities
+
+The following videos present the safetag toolkit, demonstrate its use and goes through various key tasks in a how to format. You can consult the videos:
+  - [Introduction](docs/index.md#introduction)
+  - [Concepts](docs/index.md#concepts)
+  - [Walkthrough](docs/index.md#walkthrough)
+  - [How Tos](docs/index.md#how-tos)
+  - [Community Feedback](docs/index.md#community-feedback)
+  - [Planning Feature Preview](docs/index.md#planning-feature-preview)
 
 ## Install
 
@@ -56,6 +63,16 @@ safetag start
 ```
 
 This will start the preview server and watch your local files for changes. You can open your browser at `http://localhost:8081` to browse the toolkit.
+
+## Links
+
+- [Documentation](/docs/index.md)
+- [Getting Started Guide](/docs/guide.md)
+- [Video Howtos](/docs/index.md#videos)
+- Related repositories
+  - `safetag-toolkit` content package https://github.com/contentascode/safetag-toolkit
+  - Content as code https://github.com/iilab/contentascode
+  - CLI Framework https://github.com/docsmith/docsmith
 
 <!--
 ## Plan an Audit
