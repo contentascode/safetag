@@ -34,6 +34,7 @@ script:
 deploy:
   - provider: pages
     local_dir: /home/travis/.content/build
+    skip_cleanup: true
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     on:
       branch: master
@@ -41,6 +42,7 @@ deploy:
       node: '7'
   - provider: pages
     local_dir: /home/travis/.content/build
+    skip_cleanup: true
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     on:
       tags: true
