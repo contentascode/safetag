@@ -72,7 +72,7 @@ A quick walkthrough how the toolkit works and its basic features.
 
 How to install the toolkit and prerequisites.
 
-> Please note that you now need also to install pandoc for your platform.
+> Please note that you now need also to **install pandoc** for your platform.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/wfGP42sekX0/0.jpg)](https://youtu.be/wfGP42sekX0)
 

@@ -39,7 +39,11 @@ Prerequisites:
    -  `npm i -g npm`
  - docsmith v0.5.3:
    -  `npm i -g docsmith`
+ - pandoc 1.19
+   - `brew intsall pandoc`
+   - `apt-get intsall pandoc`
 
+You can now install safetag with:
 ```
 npm i -g safetag
 ```
