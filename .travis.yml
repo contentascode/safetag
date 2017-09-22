@@ -29,7 +29,7 @@ script:
   - safetag link @safetag/toolkit/methods:~/.content/build/@safetag/migrate/methods --force
   - safetag link @safetag/toolkit/document_matter:~/.content/build/@safetag/migrate/document_matter --force
   # Build website
-  - safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
+  - DEBUG=metalsmith:transclude-transform safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
 
 deploy:
   - provider: pages
