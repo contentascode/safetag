@@ -19,7 +19,7 @@ install:
 
 script:
   - mkdir workspace && cd workspace
-  - safetag init --defaults
+  - safetag init --defaults --verbose
   - git clone https://github.com/SAFETAG/SAFETAG
   # Fix missing symlinks manually
   - safetag start --clean --no-watch --source $(pwd)/SAFETAG/en migrate
@@ -29,7 +29,7 @@ script:
   - safetag link @safetag/toolkit/methods:~/.content/build/@safetag/migrate/methods --force
   - safetag link @safetag/toolkit/document_matter:~/.content/build/@safetag/migrate/document_matter --force
   # Build website
-  - DEBUG=metalsmith:transclude-transform safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
+  - safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
 
 deploy:
   - provider: pages
