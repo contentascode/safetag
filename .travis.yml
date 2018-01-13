@@ -28,7 +28,7 @@ install:
 
 script:
   - mkdir workspace && cd workspace
-  - safetag init --defaults
+  - safetag init --non-interactive
   - git clone https://github.com/SAFETAG/SAFETAG
   # Fix missing symlinks manually
   - safetag run --clean --no-watch --source $(pwd)/SAFETAG/en migrate
