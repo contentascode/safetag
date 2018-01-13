@@ -14,7 +14,7 @@ install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo dpkg -i pandoc-1.19.2.1-1-amd64.deb; fi
   # - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then HOMEBREW_NO_AUTO_UPDATE=1 brew install pandoc; fi
   # - npm install -g npm
-  - npm i -g docsmith
+  - npm i -g docsmith@beta
   - npm i -g
 
 script:
@@ -22,7 +22,7 @@ script:
   - safetag init --defaults
   - git clone https://github.com/SAFETAG/SAFETAG
   # Fix missing symlinks manually
-  - safetag start --clean --no-watch --source $(pwd)/SAFETAG/en migrate
+  - safetag run --clean --no-watch --source $(pwd)/SAFETAG/en migrate
   # Link migrated content as content packages (use force for activities since for now there is a default activities package in safetag-toolkit)
   - safetag link @safetag/toolkit/activities:~/.content/build/@safetag/migrate/activities --force
   - safetag link @safetag/toolkit/references:~/.content/build/@safetag/migrate/references --force
