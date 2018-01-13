@@ -3,10 +3,15 @@
   "version": "0.2.6",
   "description": "SAFETAG Toolkit",
   "bin": {
-    "safetag": "../../../bin/content",
-    "safetag-init": "../../../bin/content-init",
-    "safetag-link": "../../../bin/content-link",
-    "safetag-start": "../../../bin/content-start"
+    "safetag": "../../../lib/node_modules/docsmith/lib/docsmith.js",
+    "safetag-init": "../../../lib/node_modules/docsmith/lib/docsmith-init.js",
+    "safetag-new": "../../../lib/node_modules/docsmith/lib/docsmith-new.js",
+    "safetag-load": "../../../lib/node_modules/docsmith/lib/docsmith-load.js",
+    "safetag-save": "../../../lib/node_modules/docsmith/lib/docsmith-save.js",
+    "safetag-config": "../../../lib/node_modules/docsmith/lib/docsmith-config.js",
+    "safetag-link": "../../../lib/node_modules/docsmith/lib/docsmith-link.js",
+    "safetag-start": "../../../lib/node_modules/docsmith/lib/docsmith-start.js",
+    "safetag-pkgpath": "./package.json"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
