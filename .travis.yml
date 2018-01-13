@@ -2,17 +2,26 @@ language: node_js
 node_js:
   - '6'
   - '7'
-  # - '8'
+  - '8'
+  - '9'
 os:
 - linux
-# - osx
+- osx
+
+# Add ons to allow nodegit to compile
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - libstdc++-4.9-dev
 
 install:
   # - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags` && ./install.sh) && nvm install $TRAVIS_NODE_VERSION && nvm use $TRAVIS_NODE_VERSION
   # - echo $PATH
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then wget https://github.com/jgm/pandoc/releases/download/1.19.2.1/pandoc-1.19.2.1-1-amd64.deb; fi
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo dpkg -i pandoc-1.19.2.1-1-amd64.deb; fi
-  # - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then HOMEBREW_NO_AUTO_UPDATE=1 brew install pandoc; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then HOMEBREW_NO_AUTO_UPDATE=1 brew install pandoc; fi
   # - npm install -g npm
   - npm i -g docsmith@beta
   - npm i -g
@@ -27,7 +36,10 @@ script:
   - safetag link @safetag/toolkit/activities:~/.content/build/@safetag/migrate/activities --force
   - safetag link @safetag/toolkit/references:~/.content/build/@safetag/migrate/references --force
   - safetag link @safetag/toolkit/methods:~/.content/build/@safetag/migrate/methods --force
+  - safetag link @safetag/toolkit/images:~/.content/build/@safetag/migrate/methods/images --force
   - safetag link @safetag/toolkit/document_matter:~/.content/build/@safetag/migrate/document_matter --force
+  - safetag link @safetag/guide/index.guide.md:~/.content/build/@safetag/migrate/index.guide.md --force
+  - safetag link @safetag/guide/images:~/.content/build/@safetag/migrate/methods/images --force
   # Build website
   - safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
 
