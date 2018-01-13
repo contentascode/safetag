@@ -1,6 +1,6 @@
 {
   "name": "safetag",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "SAFETAG Toolkit",
   "bin": {
     "safetag": "../../../lib/node_modules/docsmith/lib/docsmith.js",
