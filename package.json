@@ -11,6 +11,7 @@
     "safetag-config": "../../../lib/node_modules/docsmith/lib/docsmith-config.js",
     "safetag-link": "../../../lib/node_modules/docsmith/lib/docsmith-link.js",
     "safetag-start": "../../../lib/node_modules/docsmith/lib/docsmith-start.js",
+    "safetag-run": "../../../lib/node_modules/docsmith/lib/docsmith-run.js",
     "safetag-pkgpath": "./package.json"
   },
   "scripts": {
