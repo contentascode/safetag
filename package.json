@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/contentascode/safetag/issues"
   },
-  "homepage": "https://github.com/contentascode/safetag#readme"
+  "homepage": "https://github.com/contentascode/safetag#readme",
+  "devDependencies": {
+    "remark-frontmatter": "^1.2.0",
+    "remark-preset-lint-markdown-style-guide": "^2.1.1"
+  }
 }
