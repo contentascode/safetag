@@ -33,11 +33,11 @@ script:
   # Fix missing symlinks manually
   - safetag run --clean --no-watch --source $(pwd)/SAFETAG/en migrate
   # Link migrated content as content packages (use force for activities since for now there is a default activities package in safetag-toolkit)
-  - safetag link @safetag/activities:~/.content/build/@safetag/migrate/activities --force
-  - safetag link @safetag/references:~/.content/build/@safetag/migrate/references --force
-  - safetag link @safetag/methods:~/.content/build/@safetag/migrate/methods --force
-  - safetag link @safetag/images:~/.content/build/@safetag/migrate/images --force
-  - safetag link @safetag/document_matter:~/.content/build/@safetag/migrate/document_matter --force
+  - safetag link @safetag/.activities:~/.content/build/@safetag/migrate/activities --force
+  - safetag link @safetag/.references:~/.content/build/@safetag/migrate/references --force
+  - safetag link @safetag/.methods:~/.content/build/@safetag/migrate/methods --force
+  - safetag link @safetag/.images:~/.content/build/@safetag/migrate/images --force
+  - safetag link @safetag/.document_matter:~/.content/build/@safetag/migrate/document_matter --force
   - safetag link @safetag/guide/index.md:~/.content/build/@safetag/migrate/index.guide.md --force
   # Build website
   - safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
