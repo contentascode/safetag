@@ -42,6 +42,7 @@ script:
   # Build website
   - safetag start --clean --no-watch --baseurl /safetag/@safetag/toolkit toolkit
   - safetag start --clean --no-watch --baseurl /safetag/@safetag/guide guide
+  - safetag start --clean --no-watch --baseurl /safetag/@safetag/browser browser
 
 deploy:
   - provider: pages
