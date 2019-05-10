@@ -1,0 +1,90 @@
+{
+  "_from": "safetag-toolkit@^0.4",
+  "_id": "safetag-toolkit@0.4.2",
+  "_inBundle": false,
+  "_integrity": "sha512-w6duT0XxnU304hMzFugHYL4GDigzp6Hx0b7re47npR0HSVrCotuUmlZDE3XYpOsHKinlK+f/wkMWZd9smiSXTg==",
+  "_location": "/safetag-toolkit",
+  "_phantomChildren": {
+    "debug": "2.6.9",
+    "lodash": "4.17.4",
+    "marked": "0.3.12",
+    "minimatch": "3.0.4",
+    "source-map-support": "0.4.18",
+    "trim-newlines": "2.0.0"
+  },
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "safetag-toolkit@^0.4",
+    "name": "safetag-toolkit",
+    "escapedName": "safetag-toolkit",
+    "rawSpec": "^0.4",
+    "saveSpec": null,
+    "fetchSpec": "^0.4"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/safetag-toolkit/-/safetag-toolkit-0.4.2.tgz",
+  "_shasum": "bf932a2d108b1b3c03e27bf02ba3ccd9190f56e2",
+  "_spec": "safetag-toolkit@^0.4",
+  "_where": "/home/travis/.content/packages/safetag-toolkit",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/contentascode/safetag-toolkit/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "filter.js": "github:perfectwebteam/filter.js",
+    "handlebars": "^4.0.10",
+    "lodash": "^4.17.4",
+    "metalsmith-assets-copy": "0.0.2",
+    "metalsmith-assets-improved": "github:contentascode/metalsmith-assets-improved#release",
+    "metalsmith-contentascode-next": "^0.0.1",
+    "metalsmith-contentascode-next-index": "^0.0.1",
+    "metalsmith-debug": "^1.1.0",
+    "metalsmith-dynamic-collections": "^0.0.1",
+    "metalsmith-env": "^2.0.0",
+    "metalsmith-filemetadata": "^1.0.0",
+    "metalsmith-ignore": "^0.1.2",
+    "metalsmith-layouts": "^1.8.1",
+    "metalsmith-lunr": "github:contentascode/metalsmith-lunr",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-markdown-taxonomy": "^0.1.0",
+    "metalsmith-matters": "^1.2.0",
+    "metalsmith-metacopy": "^0.2.0",
+    "metalsmith-migrate-safetag": "^0.2.2",
+    "metalsmith-packages": "^0.1.0",
+    "metalsmith-pandoc": "^0.2.3",
+    "metalsmith-paths": "^3.0.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-remark-lint": "^0.0.5",
+    "metalsmith-search-meta": "github:iilab/metalsmith-search-meta",
+    "metalsmith-serve": "^0.0.7",
+    "metalsmith-text-replace": "^1.0.1",
+    "metalsmith-transclude": "^0.3.10",
+    "metalsmith-transclude-transform": "^0.1.11",
+    "metalsmith-watch": "^1.0.3",
+    "metalsmith-writemetadata": "github:contentascode/metalsmith-writemetadata",
+    "metalsmith-yaml": "github:astralfrontier/metalsmith-yaml",
+    "pug": "^2.0.0-rc.2",
+    "safetag-next": "^0.0.1",
+    "sortablejs": "^1.6.0"
+  },
+  "deprecated": false,
+  "description": "SAFETAG Toolkit - Audit Activity Planner",
+  "homepage": "https://github.com/contentascode/safetag-toolkit#readme",
+  "license": "CC-BY-SA-3.0",
+  "main": "content.yml",
+  "name": "safetag-toolkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentascode/safetag-toolkit.git"
+  },
+  "scripts": {
+    "postversion": "git push --follow-tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.4.2"
+}

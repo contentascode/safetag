@@ -1,0 +1,43 @@
+<h1 id="accessing-a-mac-filtered-network">Accessing a MAC-filtered Network</h1>
+<h2 id="summary">Summary</h2>
+<p>Open and MAC-address-filtered wireless access points are not only open to anyone within range to join and listen in to, but also do not provide protection to those on the network itself, even if they do not &quot;broadcast&quot; their name. These may seem like great ways to prevent unauthorized users from accessing your network without resorting to passwords, but they are trivial to overcome.</p>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>The auditor can easily gain access to an open or MAC address filtered access point.</p>
+<ul>
+<li>MAC-Address Spoofing
+<ul>
+<li>Start the wireless interface in monitor mode</li>
+<li>Identify MAC addresses that are on the whitelist</li>
+</ul></li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">airodump-ng</span></code></pre></div>
+<pre><code>* Change our MAC address to one that’s on the whitelist</code></pre>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">ifconfig</span> mon0 down
+<span class="ex">macchanger</span> -m [MAC ADDRESS IDENTIFIED] mon0
+<span class="ex">ifconfig</span> mon0 up</code></pre></div>
+<h5 id="material-that-may-be-useful">Material that may be Useful:</h5>
+<ul>
+<li><em>Tutorial:</em> <a href="http://blog.techorganic.com/2010/12/21/bypassing-mac-filters-on-wifi-networks/">“Bypassing MAC Filters on WiFi Networks”</a> (techorganic.com)</li>
+<li><em>Documentation:</em> <a href="http://www.aircrack-ng.org/doku.php?id=airodump-ng">“Airodump-ng”</a> (Aircrack-ng Wiki)</li>
+</ul>
+<h2 id="recommendation">Recommendation</h2>
+<p>Transitioning to WPA networks with strong passwords, even for guest networks, is recommended.</p>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

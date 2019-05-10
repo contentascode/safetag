@@ -1,0 +1,63 @@
+<h1 id="assessment-plan">Assessment Plan</h1>
+<h2 id="summary">Summary</h2>
+<p>This component allows an auditor and host to come to an understanding of the level of access that an auditor will have, what is off limits, and the process for modifying the scope of the audit when new information arises. <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a><sup>,</sup><a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> This component consists of a process where the auditor collaboratively creates an assessment plan with key members of the organization.</p>
+<p>A core tenet of SAFETAG is building agency in organizations to improve their digital security. To that end, collaboratively creating an assessment plan with the organization helps to clarify not only the audit scope - from discussing what sensitive data may be exposed to what systems may be disrupted in the process of the audit - but it also helps reveal the ability of the organization to support and respond to the audit findings.</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>To use the SAFETAG Agreement Generator, a Debian-based Linux system with python and other requirements as detailed in the <a href="https://github.com/SAFETAG/safetag_agreement_generator#installation">Agreement Generator README</a> are required.</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Consider the threat landscape of the organization when determining secure communications channels. This may require some pre-agreement work using parts of the Context Research methodology.</li>
+<li>In addition to the overall mandate to send information encrypted to the organization, also demand encrypted communication back from them. Failure to establish a secure planning channel also contributes towards a no-go situation by putting both the auditor and organization at risk.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<ul>
+<li>An agreement signed by both parties outlining the scope of the audit including:
+<ul>
+<li>The start and end dates of the audit.</li>
+<li>The location where the on-site audit will take place. <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></li>
+<li>The responsibilities of the host staff.</li>
+<li>The responsibilities of the auditor.</li>
+<li>The host names and IP ranges of any services run by the organization. <a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a></li>
+<li>Emergency contact information for the organization. <a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a></li>
+<li>The procedure the auditor will follow when handling incidents. <a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></li>
+<li>The data security standards for evidence handling and communication. <a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a></li>
+</ul></li>
+<li>A liability waiver signed by the host organization. <a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a></li>
+<li>Approval from any third parties. <a href="#fn9" class="footnoteRef" id="fnref9"><sup>9</sup></a></li>
+</ul>
+<p>Auditors are encouraged to use, or at least reference, the <a href="https://github.com/SAFETAG/safetag_agreement_generator">SAFETAG Agreement Generator</a>, a python script which provides a decision tree covering the above points, and builds a basic, clear-language agreement which can be translated and formalized as needed. Sample outputs and a diagram of the full decision tree are available in the &quot;outputs&quot; folder of the Agreement Generator repository. This replaces the draft agreement previously part of SAFETAG.</p>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Legal_Considerations">&quot; Some activities common in penetration tests may violate local laws. For this reason, it is advised to check the legality of common pentest tasks in the location where the work is to be performed.&quot;</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Permission_to_Test">&quot;In addition, some service providers require advance notice and/or separate permission prior to testing their systems. For example, Amazon has an online request form that must be completed, and the request must be approved before scanning any hosts on their cloud. If this is required, it should be part of the document.&quot;</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Locations">Determining Audit Location - The Penetration Testing Execution Standard: Pre-Engagement Guidelines</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Specify_IP_Ranges_and_Domains">&quot;Before starting a penetration test, all targets must be identified. &quot;</a><a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Emergency_Contact_Information">&quot;Obviously, being able to get in touch with the customer or target organization in an emergency is vital.&quot;</a><a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p><a href="http://csrc.nist.gov/publications/nistpubs/800-115/SP800-115.pdf#page=52">&quot;the assessment plan should provide specific guidance on incident handling in the event that assessors cause or uncover an incident during the course of the assessment. This section of the plan should define the term incident and provide guidelines for determining whether or not an incident has occurred. The plan should identify specific primary and alternate points of contact for the assessors... The assessment plan should provide clear-cut instructions on what actions assessors should take in these situations.&quot;</a><a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Evidence_Handling">&quot;When handling evidence of a test and the differing stages of the report it is incredibly important to take extreme care with the data. Always use encryption and sanitize your test machine between tests.&quot;</a><a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Permission_to_Test">&quot;One of the most important documents which need to be obtained for a penetration test is the Permission to Test document.&quot;</a><a href="#fnref8">↩</a></p></li>
+<li id="fn9"><p><a href="http://www.pentest-standard.org/index.php/Pre-engagement#Dealing_with_Third_Parties">Dealing with third parties - The Penetration Testing Execution Standard</a><a href="#fnref9">↩</a></p></li>
+</ol>
+</section>

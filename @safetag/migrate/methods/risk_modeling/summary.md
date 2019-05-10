@@ -1,0 +1,11 @@
+---
+id: methods/risk_modeling/summary.md
+name: 
+description: This component allows an auditor to lead the host organization's staff in a series of activities to identify and prioritize the processes that are critical for the organization to carry out its work.  These activities will also reveal the...
+layout: method.pug
+origin: https://github.com/SAFETAG/SAFETAG
+origin_path: master/en/methods/risk_modeling/summary.md
+---
+This component allows an auditor to lead the host organization's staff in a series of activities to identify and prioritize the processes that are critical for the organization to carry out its work.  These activities will also reveal the consequences if those critical processes were interrupted or exposed to a malicious actor.  This results in the staff creating a risk matrix which is used as the foundation of the auditor's recommendations.
+
+

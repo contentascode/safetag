@@ -1,0 +1,143 @@
+<h1 id="dns-enumeration">DNS Enumeration</h1>
+<h2 id="summary">Summary</h2>
+<p>DNS Stands for Domain Name Service. In a nutshell, what it does is translate hosts/computer's name into it's IP addresses. It provides a way to know the IP address of any given machine on the internet, with the corresponding URL, or domain. You can consider it as telephone directory of the Internet.</p>
+<p>DNS enumeration is one of your initial steps in your overall vulnerability assessment and audit. It is one stage where it will allow you to discover more potential targets. Upon completion of this assessment stage, you may find issues such as leaked information caused by default settings and server misconfigurations. Along with these, you can also have a broader scope of targets, such as internal server IP addresses, company netblocks and domain/subdomain names.</p>
+<p>DNS Enumeration can be accomplished with different number of tools along with different approaches. This guide will discuss some of the approaches and the tools required to perform each of the activities. You can perform DNS enumeration passively or actively, depending on your operational security needs.</p>
+<p><strong>Passive</strong>, or &quot;indirect&quot; approach refers to the enumeration process that doesn't send any traffic or packets from your machine, directly to your target. This can be done using 3rd tools such as online tools and cloud based scanners.</p>
+<p><strong>Active</strong>, or &quot;direct&quot; approach refers to sending DNS queries and enumeration tests directly to the target. Consider that traffic is send over the target which may leave traces or traffic logs coming from your source IP. Active techniques include Zone Transfer, Reverse Lookup, Domain and Host Brute-Forcing, Standard Record Enumeration (wildcard, SOA, MX, A, TXT etc), Cache snooping, and Zone Walking</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>System or VM running <a href="https://www.kali.org/downloads/">Kali Linux.</a></li>
+<li>Internet Connection (and possibly a VPN or tor setup)</li>
+<li>Target domain(s)</li>
+<li>Secure notetaking tool</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>These techniques can reveal your interest in the target organization to anyone in your network path, so consider using a VPN or tor to conduct searches.</li>
+<li>When performing &quot;active enumeration&quot; it is always good to ask to whitelisting your IPs whenever you perform assessments. This rules out the idea of attackers having able to avoid shunning. Whitelisting your IPs also removes false positive reports and inaccurate results</li>
+<li>It is important that we verify that we have the correct target domain(s) before proceeding with any of the scans/audits/assessments exercises within SAFETAG Framework. The last thing we wouldn't want to happen is to scan and enumerate target which is out of scope!)</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. Your investigation may be blocked by CloudFlare, a popular DDoS protection service. <a href="https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/">&quot;CloudFlair&quot;</a> provides some options in this case.</p>
+<p><strong>DNS Enumerations Tools:</strong></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 71%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tools</th>
+<th>Description</th>
+<th>Type</th>
+<th>Technique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.robtex.com/">Robtex</a></td>
+<td>Gathers public information about IP numbers, domain names, host names, Autonomous systems, routes etc, then indexes the data in a big database and provide free access to that data</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="even">
+<td><a href="https://dnsdumpster.com/">DNSdumpster</a></td>
+<td>Free domain research tool that can discover hosts related to a domain, results with banners for HTTP, FTP, SSH &amp; Telnet</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="odd">
+<td><a href="https://centralops.net/co/">CentralOps-Domain Dossier</a></td>
+<td>Investigates domains and IP addresses. Gathers registrant information, DNS records, Network and Domain Whois Records, services scans and traceroutes</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="even">
+<td><a href="http://dnssec-debugger.verisignlabs.com/">DNSSEC Analyzer</a></td>
+<td>Checks for DNSSEC keys managment and configurations records</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="odd">
+<td><a href="https://bitbucket.org/LaNMaSteR53/recon-ng">Recon-ng</a></td>
+<td>Automated web reconnaissance framework written in Python. Complete with independent modules, database interaction, built-in convenience functions, interactive help and command completion.</td>
+<td>Script</td>
+<td>Active</td>
+</tr>
+<tr class="even">
+<td><a href="https://intodns.com/">IntoDNS</a></td>
+<td>IntoDNS checks the health and configuration of your DNS and provides report on MX records too. Provides suggestions to fix and improve findings</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.yougetsignal.com/tools/web-sites-on-web-server/">YougetSignal</a></td>
+<td>Helps you find other sites being hosted on a particular IP address, verifying if the target is using a shared hosting service</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/darkoperator/dnsrecon">DNSRecon</a></td>
+<td>A Python script written by Carlos Perez for conducting DNS reconnaissance. It can enumerate general DNS records, perform zone transfers, perform reverse lookups, and brute-force subdomains among other functions. It will even perform Google scanning, automating the process we discussed in the Using Google to find subdomains section.</td>
+<td>Script</td>
+<td>Active</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/fwaeytens/dnsenum">DNSenum</a></td>
+<td>multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.</td>
+<td>Script</td>
+<td>Online</td>
+</tr>
+</tbody>
+</table>
+<p>Specific instructions for selected tools/techniques follows:</p>
+<h6 id="passive-third-party-and-online-tools">Passive: Third Party and Online Tools</h6>
+<p>:<a href="variant_using_online_tools_resources.md"></a></p>
+<h6 id="active-dnsrecon">Active: DNSrecon</h6>
+<p>:<a href="variant_dns_recon.md"></a></p>
+<h6 id="active-dnsenum">Active: DNSenum</h6>
+<p>:<a href="variant_dns_enum.md"></a></p>
+<h6 id="activedns-zone-transfer">Active:DNS Zone Transfer</h6>
+<p>:<a href="variant_dns_zonetransfer.md"></a></p>
+<h6 id="active-mx-records">Active: MX Records</h6>
+<p>:<a href="variant_mx_records.md"></a></p>
+<h2 id="recommendation">Recommendation</h2>
+<p>DNS is inherently public information, but we can still do a lot of steps to secure any parts of it which are revealing more private information. Fortinet provides a set of good recommendations:</p>
+<p><a href="https://blog.fortinet.com/2016/03/10/10-simple-ways-to-mitigate-dns-based-ddos-attacks" class="uri">https://blog.fortinet.com/2016/03/10/10-simple-ways-to-mitigate-dns-based-ddos-attacks</a></p>
+<p>If a zone transfer was successful, (most providers automatically limit anonymous zone transfers), you will need to work with their support team to prevent this, or switch to a different DNS provider. If your organization maintains its own DNS servers, the administrator of those servers should check the zone transfer policies to prevent anonymous transfers.</p>
+<h2 id="outputs">Outputs</h2>
+<ul>
+<li>A fuller map of the organization's online presence, including additional (potentially forgotten) hosts/services connected with the organization.<br />
+*Domains + IP addresses</li>
+<li>Subdomains + IP addresses</li>
+<li>MX Records + IP addresses</li>
+<li>DNSKeys</li>
+<li>SOA records, DNS records and registrar</li>
+<li>Domains hosted within the same IP address</li>
+<li>DNS history Records</li>
+<li>Domain Reputation (Web of Trust)</li>
+<li>Some of this information may already give you an idea of how your target's infrastructure setup. For example, you may see if the target domain goes into a CDN (Content Delivery Network) or sometimes DDoS mitigations services by finding out it's NS records. You can also identify if the target's MX records are behind a DLP (Data Leakage Prevention) systems.</li>
+<li>The output of your DNS enumeration might contain &quot;more&quot; information about the client organization (internal DNS records, hostnames, router names, additional IP addresses). This data is sometimes caused by misconfigured DNS or default service configurations, so look for misleading and false-positive results.</li>
+</ul>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

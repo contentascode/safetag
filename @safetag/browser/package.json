@@ -1,0 +1,72 @@
+{
+  "_from": "safetag-next@^0.0.1",
+  "_id": "safetag-next@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-jM3zrz3BM1WzyWybcgWubj8TBy+xVBSSJVvzsBYapmzxNipIGdwoFr7VD9uaWagHDFp4UpJPP+BwvwYE+3hMxA==",
+  "_location": "/safetag-next",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "safetag-next@^0.0.1",
+    "name": "safetag-next",
+    "escapedName": "safetag-next",
+    "rawSpec": "^0.0.1",
+    "saveSpec": null,
+    "fetchSpec": "^0.0.1"
+  },
+  "_requiredBy": [
+    "/safetag-toolkit"
+  ],
+  "_resolved": "https://registry.npmjs.org/safetag-next/-/safetag-next-0.0.1.tgz",
+  "_shasum": "c65bfd32892bd5249fd8a9c75e51e980b205a314",
+  "_spec": "safetag-next@^0.0.1",
+  "_where": "node_modules/safetag-toolkit",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "antd": "^3.5.4",
+    "babel-plugin-import": "^1.7.0",
+    "extract-loader": "^3.1.0",
+    "html-loader": "^0.5.5",
+    "immer": "^2.0.0",
+    "less": "3.0.4",
+    "less-vars-to-js": "1.3.0",
+    "next": "latest",
+    "ramda": "^0.26.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-expand-animated": "^1.0.0",
+    "react-lunr": "^0.5.0",
+    "react-markdown": "^4.0.4",
+    "react-markdown-renderer": "^1.4.0",
+    "react-redux": "^6.0.0",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1"
+  },
+  "deprecated": false,
+  "description": "Next.js/React wrapper for Content as Code rendering of Safetag Guide",
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "file-loader": "^2.0.0",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.15.3",
+    "react-svg-loader": "^2.1.0",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "license": "ISC",
+  "name": "safetag-next",
+  "scripts": {
+    "build": "next build",
+    "dev": "nodemon server.js",
+    "start": "next start"
+  },
+  "version": "0.0.1"
+}

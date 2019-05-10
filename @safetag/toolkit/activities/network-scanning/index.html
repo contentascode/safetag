@@ -1,0 +1,235 @@
+<!DOCTYPE html><!--if lt IE 7<html class="ie ie6" lang="en">--><!--if IE 7<html class="ie ie7" lang="en">--><!--if IE 8<html class="ie ie8" lang="en">--><!--if (gte IE 9)|!(IE)<!--><html lang="en"> <!--
+--><html><head><meta charset="utf8"><title> &middot; SAFETAG</title><meta name="description" content=""><meta name="author" content=""><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link href="/safetag/@safetag/toolkit/filter.js/assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><link href="/safetag/@safetag/toolkit/filter.js/assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css"><link href="/safetag/@safetag/toolkit/filter.js/assets/css/stream.css" media="screen" rel="stylesheet" type="text/css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/skeleton.css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/selection.css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/site.css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/fonts.css"><script src="/safetag/@safetag/toolkit/filter.js/assets/js/jquery-1.11.3.min.js" type="text/javascript"></script><script src="/safetag/@safetag/toolkit/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script><script src="/safetag/@safetag/toolkit/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script><script src="/safetag/@safetag/toolkit/js/js-yaml.min.js"></script><script src="/safetag/@safetag/toolkit/js/sortable.min.js"></script><script src="/safetag/@safetag/toolkit/js/lodash.min.js"></script><script src="/safetag/@safetag/toolkit/js/filter.js"></script><script src="/safetag/@safetag/toolkit/js/anchor.min.js"></script><script src="/safetag/@safetag/toolkit/js/site.js"></script><link rel="shortcut icon" href="/safetag/@safetag/toolkit/img/favicon.ico"><link rel="apple-touch-icon" href="/safetag/@safetag/toolkit/img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="/safetag/@safetag/toolkit/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="/safetag/@safetag/toolkit/img/apple-touch-icon-114x114.png"><link rel="alternate" type="application/rss+xml" title="RSS" href="/safetag/@safetag/toolkit/atom.xml"></head><div class="navbar-spacer"></div><nav class="navbar navbar-fixed-top"><div class="container"><ul class="navbar-list"><li class="navbar-item"><a class="navbar-link" href="/safetag/@safetag/toolkit/">Home</a></li><li class="navbar-item"><a class="navbar-link" href="#" data-popover="#codeNavAbout">Methods</a><div class="popover" id="codeNavAbout"><ul class="popover-list"><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/preparation.guide">Preparation</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/context_research.guide">Context Research</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/capacity_assessment.guide">Capacity Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/reconnaissance.guide">Reconnaissance</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/network_discovery.guide">Network Discovery</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/network_access.guide">Network Access</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/network_mapping.guide">Network Mapping</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/user_device_assessment.guide">User Device Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/vulnerability_scanning.guide">Vulnerability Scanning and Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/data_assessment.guide">Data Asssessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/physical_assessment.guide">Physical Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/risk_modeling.guide">Process Mapping and Risk Modeling</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/threat_assessment.guide">Threat Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/responsive_support.guide">Responsive Support</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/follow_up.guide">Follow Up</a></li></ul></div></li><li class="navbar-item u-pull-right hidden" id="cd-cart-trigger"><a class="navbar-link cd-img-replace cd-cart" href="#0">Plan<i class="glyphicon glyphicon-list-alt"><span>0</span></i></a></li></ul></div></nav><body class="has-docked-nav" data-baseurl="/safetag/@safetag/toolkit"><div class="container"><div class="row links"><small><div class="crumb u-pull-left"><a href="/safetag/@safetag/toolkit">Home</a> / Activities  / Network Scanning</div><div class="utilities u-pull-right"><a href="https://github.com/SAFETAG/SAFETAG/edit/master/en/exercises/network_scanning/variant_nmap.md">Edit</a> - <a href="https://github.com/SAFETAG/SAFETAG/commits/master/en/exercises/network_scanning/variant_nmap.md">Changes</a> - <a href="https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/network_scanning/variant_nmap.md">Source</a></div></small></div><div class="docs-section"><div class="space"> </div><h1 id="network-scanning">Network Scanning</h1>
+<h2 id="summary">Summary</h2>
+<p>Network scanning is a technique used to gather information about devices connected on a certain network. It involves enumerating open ports and services running to determine the type of device, the operating system it is running, the applications that is it running and a lot more. There are a lot of open source tools that you can used to perform this technique. Though it may look like simple and ordinary technique, it may be used for both good and bad intentions.</p>
+<p>The goal for this exercise is to identify, enumerate and categorize all devices connected to the network. Any device that has an IP address is our target. This may include:</p>
+<ul>
+<li>Desktop computers</li>
+<li>Laptop computers</li>
+<li>Tablet devices</li>
+<li>Mobile phones</li>
+<li>Printers</li>
+<li>Wireless routers</li>
+<li>VoIP devices</li>
+<li>Smart TVs and appliances</li>
+<li>Servers and storage devices</li>
+</ul>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>Laptop or appliance that can scan the network</li>
+<li>nmap/zenmap</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li><strong>In Scope Devices</strong> Just always remember that some may not want you to scan everything on their network. To avoid this, always ask your auditee if there are specific devices that needs exclusion. These machine can be critical to their operation or they just don't want to get scanned. If your auditee have exclusions, explain the consequences possible if a machine does not undergo vulnerability assessment. If scanning public servers, verify that the server host (web company, cloud provider, etc.) has approved of the scan, and than remote scanning is legal in the jurisdiction you are performing it from and in the location of the remote server.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>Local networks often have a variety of devices connected to them - servers, laptops, printers, and user devices such as cellphones and tablets. Scanning the connected devices can reveal potential areas for further research such as odd ports being open, out of date devices/services, forgotten servers/services etc. These information are then reviewed in vulnerability research exercise, and then (if required) validated in the penetration testing exercise.</p>
+<p>Using a network scanning tool (<strong>nmap/zenmap</strong> work well), discover the devices connected to the organization's network, and explore further information such as services, service banners, and operating systems. More intense scans can be too time-consuming to run across the entire network, so target those to higher value systems. As always, be aware of the scans and additional scripts you choose, and focus your exploration (in nmap) on scripts categorized as &quot;safe&quot;.</p>
+<h6 id="overall-process">Overall Process</h6>
+<ol>
+<li>Using zenmap/nmap, identify all of the devices currently active on the network. It is worth repeating a quick scan at different times of the day and on different days to get a more complete view of the network.
+<ul>
+<li>Discover network-connected devices, including servers and workstations, but also smartphones, printers, security cameras, voip phones, and other devices.</li>
+<li>Record the version and patch levels of software on the device. <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></li>
+</ul></li>
+<li>For the active, in-scope devices, the next step is to gather additional details including hostnames, mac addresses (useful for tracking devices over multiple days, as their IP address may change), operating system and versions, port numbers, and any running services such as shared drives, remote management services and old or legacy services. Doing host enumeration sometimes takes time, as not all devices may respond to your scans in the same way. To overcome this, there are variant tools with the steps on how to perform an efficient network scan.
+<ul>
+<li>Run OS detection options</li>
+<li>Scan for open ports and service banners (not all ports correctly map to their &quot;expected&quot; services, also provides service version information)</li>
+<li>select additional nmap scripts and more exhaustive port scanning as needed. Filter for safe scripts!</li>
+</ul></li>
+<li><p>Categorize the devices that you will discover. This is to make it more efficient later when runing vulnerability scans, enabling you to target them effectively. For devices which are not easily categorized, see the IoT section below</p></li>
+<li><strong>Port/Service research, and How to decide if an open port is suspicious</strong> If a port is open in a personal computer or mobile device, this should be immediately considered suspicious and investigated.
+<ul>
+<li>Inspect all systems providing internal services to the host organization.</li>
+<li>Identify weak ports or services available under the current device's firewall configuration. <a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></li>
+<li>Identify and investigate any open ports that should not be open (e.g.: almost no ports should be open in personal computers, see below)</li>
+<li>Identify all odd/obscure/one-off services. <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></li>
+</ul></li>
+<li><p>Using the list of software versions and patches identify attacks and, if possible, identified malware that devices in the office are vulnerable to.</p></li>
+</ol>
+<h6 id="custom-instructions-per-type-of-device">Custom instructions per type of device</h6>
+<p><strong>Servers </strong></p>
+<p>An open port in a server or IoT device should be investigated if it doesn't correspond to a known service. For example, if the open port is 80, 8080, or 443, it's supposed to be open for a web server, so you can try to browse it by pasting the IP address in your browser address bar.</p>
+<p>If it's for SSH (port 22), try to log into it through SSH. If the service isn't supposed to be running in the identified device, you can run a scan of the open ports and request service banners, and/or try to telnet directly to the IP:port to identify what service they are connected to.<br />
+To identify what a port might be used for, look at the complete list at <a href="https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml">IANA.org</a>. Using nmap's banner scripts will also reveal what the service reports itself as (for example, you can run ssh, usually port 22, on port 443, usually https). Once you have identified what service that port might be used for, always check that that service is actually running in the machine and that the user or sysadmin is aware of it.</p>
+<p>In general, these are ports that might be open in a server:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Port</th>
+<th>Service</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>FTP</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>SSH</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>Telnet</td>
+</tr>
+<tr class="even">
+<td>25</td>
+<td>SMTP</td>
+</tr>
+<tr class="odd">
+<td>53</td>
+<td>DNS</td>
+</tr>
+<tr class="even">
+<td>80</td>
+<td>HTTP</td>
+</tr>
+<tr class="odd">
+<td>110</td>
+<td>POP</td>
+</tr>
+<tr class="even">
+<td>139</td>
+<td>SMB</td>
+</tr>
+<tr class="odd">
+<td>143</td>
+<td>IMAP</td>
+</tr>
+<tr class="even">
+<td>194</td>
+<td>IRC</td>
+</tr>
+<tr class="odd">
+<td>443</td>
+<td>HTTPS</td>
+</tr>
+<tr class="even">
+<td>465</td>
+<td>SMTP</td>
+</tr>
+<tr class="odd">
+<td>530</td>
+<td>CUPS</td>
+</tr>
+<tr class="even">
+<td>587</td>
+<td>SMTP</td>
+</tr>
+<tr class="odd">
+<td>667</td>
+<td>IRC</td>
+</tr>
+<tr class="even">
+<td>993</td>
+<td>IMAP</td>
+</tr>
+<tr class="odd">
+<td>995</td>
+<td>POP</td>
+</tr>
+<tr class="even">
+<td>1900</td>
+<td>port authority</td>
+</tr>
+<tr class="odd">
+<td>3306</td>
+<td>MySQL</td>
+</tr>
+<tr class="even">
+<td>6881 to 6889</td>
+<td>Torrent</td>
+</tr>
+<tr class="odd">
+<td>6969</td>
+<td>Torrent</td>
+</tr>
+<tr class="even">
+<td>8080</td>
+<td>HTTP</td>
+</tr>
+</tbody>
+</table>
+<p><strong>IoT Devices</strong></p>
+<p>IoT (Internet of Things) is getting popular in use because of it's ease of use and ability to address certain needs. (e.g. use of IP camera instead of CCTV). As classes of network appliances become common, additional exercises (such as the VOIP assessment) can be created. For others, it is still worth conducting a basic assessment to determine what security implications network-connected devices may have.</p>
+<p>In the course of network scanning, watch for devices without clear operating system identification (from nmap/zenmap), and/or devices registering as Linux or unknown (particularly if there are not Linux users or servers), and use hostnames and MAC address lookups <a href="https://www.wireshark.org/tools/oui-lookup.html">Wireshark</a>, <a href="https://macvendors.com/">MACVendors</a> for &quot;hints&quot;.</p>
+<p>Follow up on these devices with more intensive, specific scans to positively identify them, and/or follow up with staff to help physically locate the devices. Some devices, such as Smart TVs, may not even be normally thought of as devices worth considering, but if they are connected to the work network, they can add vulnerabilities.</p>
+<p>Once any IoT devices have been identified, follow up with research as to their current and possible patch level/software update, what vulnerabilities they may have even if fully updated, and if there have been any known attacks against the platform. Check their configuration to see if they are accessible from the Internet (directly, via UPnP, or via an external service that the device connects out to). Check to see that default passwords have been updated, and any service-connected devices have strong, unique and not-previously-breached passwords.</p>
+<p>If there are un-mitigateable vulnerabilities, consider suggesting removing the IoT device from the network or creating a separate network disconnected from organizational resources for non-work devices.</p>
+<p><strong>Windows / SMB Networks</strong></p>
+<ul>
+<li>SNMP</li>
+<li>SMB</li>
+<li>NetBIOS</li>
+<li>Shared Folders</li>
+<li>RDP</li>
+<li>Telnet</li>
+<li>Password Sniffing</li>
+</ul>
+<p>You can use smbtree to request a list of all smb network device names and nmblookup to connect them to their IP address.</p>
+<p>Unsigned NTLM authentication messages vulnerable to Man-in-the-Middle attack on SMB file servers. It also allow an attacker on the LAN to add, remove or copy files to and from the organization’s file servers (and workstations with filesharing enabled).</p>
+<ul>
+<li>On Windows, use netstat from the command prompt as an administrator: the command would be <code>netstat -ab</code> - this will show you the name of the process running on the open port.</li>
+<li>To identify the process on the open port more in-depth, run the official <a href="https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer">Microsoft Process Explorer</a> (right-click a process to see the Properties - the port will be visible in the TCP/IP tab and you will find more information on the path of the process in the &quot;Image&quot; tab).</li>
+<li>You can investigate the process on Virustotal directly from Process Explorer, by right-clicking on the process and then clicking &quot;Check VirusTotal&quot;.</li>
+</ul>
+<p><strong>MacOS</strong></p>
+<ul>
+<li>On Mac, launch <code>netstat lsof</code> - this will show you the path of the process running on the open port.</li>
+</ul>
+<p><strong>GNULinux</strong></p>
+<ul>
+<li>On Linux, follow <a href="https://www.cyberciti.biz/faq/what-process-has-open-linux-port/">these instructions</a>.</li>
+</ul>
+<h6 id="external-network-scanning">External Network Scanning</h6>
+<p>Selected scanning of external network devices (websites, webmail, extranet services) may also reveal vulnerabilities or other areas of concern. However, it is important that you seek approval or any written document that proves you have the authority to scan your target organization along with its web resources and services.</p>
+<p>External network scans are different for local network scans. This is because you are scanning devices that are publicly available, and can be done remotely outside the organization's premise. If your auditee agreed to have their public facing machines scanned, keep in mind that you need to consider asking your auditee for whitelisting options for shunning IDS/IPS, firewalls and other blocking mechanisms during your scan. Also make sure that you have verified the target in-scope. This is to avoid scanning out-of-scope targets that may lead you to other problems.</p>
+<p>Most of the machines you'll encounter over external network scans were:</p>
+<ul>
+<li>Web servers</li>
+<li>DNS servers</li>
+<li>Mail servers</li>
+<li>Gateway devices</li>
+<li>FTP Servers</li>
+<li>Cloud servers</li>
+</ul>
+<h6 id="using-nmapzenmap">Using nmap/zenmap</h6>
+<p>:<a href="variant_nmap.md"></a></p>
+<h2 id="recommendation">Recommendation</h2>
+<p>While office networks are often treated as &quot;trusted&quot; spaces, measures should be in place to reduce the potential harm of an attacker who gains access. In addition, devices that &quot;travel&quot; -- such as laptops and mobile phones -- should have adequate security settings (generally, firewalls) to protect them on other networks.</p>
+<p>A policy should be in place for connecting personal devices to work networks, as well as work devices to non-work networks.</p>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="#identifying-software-versions">Identifying Software Versions</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="#examining-firewalls-across-os">Examining Firewalls Across OS</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="#identifying-oddone-off-services">Identifying Odd/One-Off Services</a><a href="#fnref3">↩</a></p></li>
+</ol>
+</section>
+</div></div></body><div class="section categories"><div class="container"><div class="row"><div class="two columns">&nbsp;</div><div class="eight column category"><h4>Developed with ❤ by</h4><a href="https://iilab.org"><img class="u-max-full-width" src="/safetag/@safetag/toolkit/img/iilab_white.svg"></a><h5>Information Innovation Lab</h5><p>Applied research and development of public interest technology.</p></div><div class="two columns">&nbsp;</div></div></div></div><script>$( document ).ready(function() {
+  anchors.options.placement = 'left';
+  anchors.add('h1,h2,h3');
+})
+</script></html>

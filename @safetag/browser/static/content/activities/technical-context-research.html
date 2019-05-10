@@ -1,0 +1,137 @@
+<h1 id="technical-context-research">Technical Context Research</h1>
+<h2 id="summary">Summary</h2>
+<p>This exercise focuses on research into the technical capacity of potential threat actors, including both historical attack data and any indicators of changes to their capacity. Auditors are encouraged to create a summary of their findings for inclusion in the audit report and for sharing (if operational security and the agreement with the organization permits) among trusted networks.</p>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Use VPNs or Tor to search if conducting the search from a country that is highly competitive with the organization's country, or is known to surveil.</li>
+<li>The regional or country focus of the report may reveal information about the acitivites of an auditor. If the report is to be shared, consider sharing in bulk or a significant time after any travel has been completed.</li>
+<li>If the report is to be shared, ensure your audit agreement with the organization covers and restrictions for sharing.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>Thoroughly research technical attack history for the country/region, with a focus on identifying attacks which may focus on the work of the organization. Auditors are advised to track both capability (known attacks and tools) and intent (attempts to aquire tools, changes in policies, public statements). For auditors who intend to share their research efforts, it is incredibly useful to include key quotes and data directly into relevant sections of this document, providing a reference or link back to the original report. This allows future reviewers to more immediately understand your assessment, what it has included and not, and incorporate new material.</p>
+<p>It is useful to categorize the research into categories:</p>
+<ul>
+<li><strong>Surveillance</strong> (Surveillance Technology, Encryption Regulation, Identity Tracking, Requests for User Information)</li>
+<li><strong>Targeted Attacks</strong> (Targeting Ability, Technical Sophistication)</li>
+<li><strong>Censorship and Connectivity</strong> (Network Ownership, Shutdowns, Targeted Censorship, Blocking apps, Blocking Circumvention)</li>
+<li><strong>Seizure and Theft</strong> (Device Confiscation, Targeted Raids, Robbery/Theft)</li>
+</ul>
+<p>Keep a separate running list for:</p>
+<ul>
+<li><strong>Targeted Populations</strong> (Are specific types of people targeted/surveilled due to their identity/race/background?)</li>
+<li><strong>Targeted Activities</strong> (Are specific activities abnormally targeted - e.g. protests, calls for government transparency, etc.?)</li>
+<li><strong>Sensitive Events</strong> (Are there specific historic/anniversary/holiday dates, upcoming elections (<a href="https://www.ndi.org/elections-calendar" class="uri">https://www.ndi.org/elections-calendar</a>), or other known events to be noted?)</li>
+<li><strong>Sources and New Additions</strong> (What resources have you found, ?)</li>
+</ul>
+<p>If the country(ies) of interest are in the <a href="https://freedomhouse.org/report-types/freedom-net">Freedom on the Net</a> report, you will be able to gather a great deal of baseline information across all the sections by reading through the relevant country reports. The key internet controls found in the Freedom on the Net report ( <a href="https://freedomhouse.org/report/key-internet-controls-table-2016" class="uri">https://freedomhouse.org/report/key-internet-controls-table-2016</a> ) guided many of the categories used here, reducing the effort required to create a baseline report. More advanced reporting could include references to the <a href="https://capec.mitre.org/">CAPEC</a> (Common Attack Pattern Enumeration and Classification) taxonomy, and auditors may also be interested in leveraging the <a href="https://oasis-open.github.io/cti-documentation/stix/intro">STIX</a> standard to better automate sharing and further research into specific threats using threat information sharing platforms.</p>
+<p>Additional organizations which regularly release in-depth digital security focused country reports which are strongly recommended to review in creation of an assessment are listed below. These sources often link to their primary sources or other groups doing dedicated research on the country or topic for further research. In addition, sub-sections list topic-specific research ideas.</p>
+<ul>
+<li>Digital attacks and threat information affecting NGOs and media</li>
+<li><a href="https://freedomhouse.org/report-types/freedom-net">Freedom on the Net Report (Country Reports)</a></li>
+<li><a href="https://www.hrw.org/regions">Human Rights Watch</a></li>
+<li><a href="https://rsf.org/en">Reporters Without Borders</a> (<a href="http://12mars.rsf.org/2014-en/">http://12mars.rsf.org/2014-en</a><a href="http://12mars.rsf.org/2014-en/"></a>and <a href="http://en.rsf.org/%5BFULL-COUNTRY-NAME%5D.html">http://en.rsf.org/%5BFULL-COUNTRY-NAME%5D.html</a>)</li>
+<li><a href="https://www.privacyinternational.org/">Privacy International</a> (site:<a href="https://www.privacyinternational.org/" class="uri">https://www.privacyinternational.org/</a> &quot;[COUNTRY]&quot; filetype:pdf)</li>
+<li>Citizen Lab (site:<a href="https://www.privacyinternational.org/" class="uri">https://www.privacyinternational.org/</a> &quot;[COUNTRY]&quot;)</li>
+<li>Amnesty International site:<a href="http://www.amnestyusa.org/research/reports/" class="uri">http://www.amnestyusa.org/research/reports/</a> [TERM] [COUNTRY]</li>
+<li><p>Information Security and Cyber Threats sections of OSAC assessments <a href="https://www.osac.gov/Pages/ContentReports.aspx?cid=3" class="uri">https://www.osac.gov/Pages/ContentReports.aspx?cid=3</a></p></li>
+<li>Industry-wide news and data</li>
+<li>OODALoop: site:<a href="https://www.oodaloop.com" class="uri">https://www.oodaloop.com</a> [COUNTRY]</li>
+<li>Akami (Security) State of the Internet Report <a href="https://www.akamai.com/us/en/about/our-thinking/state-of-the-internet-report/global-state-of-the-internet-security-ddos-attack-reports.jsp" class="uri">https://www.akamai.com/us/en/about/our-thinking/state-of-the-internet-report/global-state-of-the-internet-security-ddos-attack-reports.jsp</a></li>
+<li><p><a href="http://www.internetworldstats.com/">Internet World Stats - Country Internet and Telecom Reports</a></p></li>
+</ul>
+<p>Below are definitions and resources for the research categories which can help build out a country or regional assessment useful for the auditor, the organization, and for the broader organizational security community.</p>
+<ul>
+<li><strong>Surveillance</strong></li>
+<li><em>Surveillance Technology</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Telecommunications network monitoring or surveillance technology in use. To what extent are providers of access to digital technologies required to aid the government in monitoring the communications of their users?</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://sii.transparencytoolkit.org" class="uri">https://sii.transparencytoolkit.org</a> , Google Searches of Privacy international: site:<a href="https://www.privacyinternational.org/" class="uri">https://www.privacyinternational.org/</a> &quot;[COUNTRY]&quot; filetype:pdf, Google Searches of Citizen Lab: site:<a href="https://citizenlab.org/" class="uri">https://citizenlab.org/</a> [TERM] [COUNTRY], Information Security and Cyber Threats sections of OSAC assessments</li>
+</ul></li>
+<li><em>Encryption Regulation</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Encryption and/or secure communications and anonymity is limited or banned via regulation. Are users prohibited from using encryption software to protect their communications? Are there laws restricting the use of encryption and other security tools, or requiring that the government be given access to encryption keys and algorithms?</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://www.gp-digital.org/world-map-of-encryption/" class="uri">https://www.gp-digital.org/world-map-of-encryption/</a>, <a href="http://www.cryptolaw.org" class="uri">http://www.cryptolaw.org</a> <a href="https://github.com/digitalfreedom" class="uri">https://github.com/digitalfreedom</a>, <a href="http://www.nationaldefensemagazine.org/archive/2013/August/pages/UseCautionWhenTravelingWithEncryptionSoftware.aspx" class="uri">http://www.nationaldefensemagazine.org/archive/2013/August/pages/UseCautionWhenTravelingWithEncryptionSoftware.aspx</a> <a href="http://www.infolawgroup.com/" class="uri">http://www.infolawgroup.com/</a> , <a href="https://mlat.info/" class="uri">https://mlat.info/</a> , <a href="http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx" class="uri">http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx</a></li>
+</ul></li>
+<li><em>Identity Tracking</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: There are regulations requiring some form of identification tracking on telecommunication technology or online platforms, such as for purchase of a SIM card. Are users able to post comments online or purchase mobile phones anonymously or does the government require that they use their real names or register with the government? Are website owners, bloggers, or users in general required to register with the government?</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://www.gp-digital.org/world-map-of-encryption/" class="uri">https://www.gp-digital.org/world-map-of-encryption/</a>, <a href="http://www.cryptolaw.org" class="uri">http://www.cryptolaw.org</a> <a href="https://github.com/digitalfreedom" class="uri">https://github.com/digitalfreedom</a>, <a href="http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx" class="uri">http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx</a></li>
+</ul></li>
+<li><em>Requests for User Information</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: The government requests user data from internet intermediaries like ISP’s, social media, and online services.</li>
+<li><strong>Useful Data Sources</strong>: Recent transparency reports from top and/or locally relevant service providers; see the following for listings: <a href="https://www.accessnow.org/transparency-reporting-index/" class="uri">https://www.accessnow.org/transparency-reporting-index/</a> , <a href="http://thememoryhole2.org/blog/transparency-reports" class="uri">http://thememoryhole2.org/blog/transparency-reports</a> , <a href="http://jameslosey.com/post/114045240881/who-publishes-transparency-reports-a-list-of-the" class="uri">http://jameslosey.com/post/114045240881/who-publishes-transparency-reports-a-list-of-the</a></li>
+</ul></li>
+<li><strong>Targeted Attacks</strong></li>
+<li><em>Targeting Ability</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Host nation has in-house or commercially sourced capability to leverage the information from social media monitoring, arrests, or existing targeted attacks in conducting additional attacks such as phishing, pharming, or spear-phishing.</li>
+<li><strong>Useful Data Sources</strong>: Google Searches of Citizen Lab: site:<a href="https://citizenlab.org/" class="uri">https://citizenlab.org/</a> [TERM] [COUNTRY], <a href="https://targetedthreats.net/media/2-Extended%20Analysis-Full.pdf#page=23">https://targetedthreats.net/media/2-Extended%20Analysis-Full.pdf#page=23</a> , <a href="http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx" class="uri">http://www.itu.int/en/ITU-D/Cybersecurity/Pages/Country_Profiles.aspx</a> , <a href="http://www.kroll.com/en-us/intelligence-center/reports/global-fraud-report">http://www.kroll.com/en-us/intelligence-center/reports/global-fraud-report,</a><a href="http://www.kroll.com/en-us/intelligence-center/reports/global-fraud-report">Symantec</a><a href="http://www.kroll.com/en-us/intelligence-center/reports/global-fraud-report">https://www.symantec.com/security-center/threat-report , https://www.symantec.com/security_response/publications/monthlythreatreport.jsp , https://www.symantec.com/connect/blogs</a>, <a href="https://github.com/hslatman/awesome-threat-intelligence">Awesome Threat Intel</a></li>
+</ul></li>
+<li><em>Technical Sophistication</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Host nation has in-house or commercially sourced capability to maintain persistent access to targets over time and across platforms.</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://sii.transparencytoolkit.org/" class="uri">https://sii.transparencytoolkit.org/</a> , APT Groups and Operations sheet (includes targets): <a href="https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit#gid=1864660085" class="uri">https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit#gid=1864660085</a> , Google Searches of Citizen Lab: site:<a href="https://citizenlab.org/" class="uri">https://citizenlab.org/</a> [TERM] [COUNTRY],</li>
+</ul></li>
+<li><strong>Censorship and Connectivity</strong></li>
+<li><em>Connectivity and Network Ownership</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Extent to which telecommunications networks and internet service providers are state owned or operated.</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://freedomhouse.org/report-types/freedom-net" class="uri">https://freedomhouse.org/report-types/freedom-net</a> , <a href="http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx" class="uri">http://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx</a> , ASNs: <a href="https://ipinfo.io/countries" class="uri">https://ipinfo.io/countries</a> , DYN Research Reports site:<a href="http://research.dyn.com" class="uri">http://research.dyn.com</a> [COUNTRY], Akami State of the Internet Report <a href="https://www.akamai.com/us/en/our-thinking/state-of-the-internet-report/index.jsp" class="uri">https://www.akamai.com/us/en/our-thinking/state-of-the-internet-report/index.jsp</a> , ITU Statistics <a href="http://www.itu.int/en/ITU-D/Statistics/Pages/default.aspx" class="uri">http://www.itu.int/en/ITU-D/Statistics/Pages/default.aspx</a> , Internet World Stats <a href="http://www.internetworldstats.com/" class="uri">http://www.internetworldstats.com/</a></li>
+</ul></li>
+<li><em>Internet Shutdowns</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: The host nation is willing and able to obstruct access to the global Internet or mobile networks either in a specific region or nationwide</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://www.accessnow.org/keepiton" class="uri">https://www.accessnow.org/keepiton</a></li>
+</ul></li>
+<li><em>Targeted Censorship</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Host nation is willing and able to use targeted censorship approaches (including DDoS) against specific websites. To what extent does the state employ legal, administrative, or other means to force deletion of particular content, including requiring private access providers to do so? To what extent does the state or other actors block or filter specific internet and other ICT content, particularly on political and social issues e.g. distributed denial of service attacks (DDoS) attacks, content removal requests, and legal take-downs</li>
+<li><strong>Useful Resources:</strong> <a href="https://explorer.ooni.torproject.org/world/" class="uri">https://explorer.ooni.torproject.org/world/</a> , <a href="https://www.herdict.org/explore/indepth" class="uri">https://www.herdict.org/explore/indepth</a> , <a href="https://www.qurium.org/alerts/" class="uri">https://www.qurium.org/alerts/</a> , <a href="https://equalit.ie/category/deflect-labs/" class="uri">https://equalit.ie/category/deflect-labs/</a> , DYN Research Reports site:<a href="http://research.dyn.com" class="uri">http://research.dyn.com</a> [COUNTRY], Internet Monitor <a href="https://cyber.law.harvard.edu/research/internetmonitor" class="uri">https://cyber.law.harvard.edu/research/internetmonitor</a></li>
+</ul></li>
+<li><em>Blocking Communications Apps and Platforms</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Entire platforms temporarily or permanently blocked to prevent communication and information sharing.</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://explorer.ooni.torproject.org/world/" class="uri">https://explorer.ooni.torproject.org/world/</a>, <a href="https://www.herdict.org/">Herdict</a>, <a href="https://en.greatfire.org/analyzer">GreatFire (for China)</a></li>
+</ul></li>
+<li><em>Blocking Circumvention</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Host nation is willing and able to disable the use of circumvention or secure communications technology.</li>
+<li><strong>Useful Data Sources</strong>: <a href="https://explorer.ooni.torproject.org/world/" class="uri">https://explorer.ooni.torproject.org/world/</a></li>
+</ul></li>
+<li><strong>Seizure and Theft</strong></li>
+<li><em>Device Confiscation</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Likelihood of confiscation of user devices when interacting with security forces. E.g. When crossing borders, at internal checkpoints, or during detainment or arrest. See themes for &quot;targeted individuals&quot;</li>
+<li><strong>Useful Data Sources</strong>: See physical-security risk register and for information around border crossings.</li>
+</ul></li>
+<li><em>Targeted Raids</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Likelihood of office raid and seizure of equipment by host nation. See project information for modifiers around &quot;unwelcome themes,&quot; “environmental factors,” and “office being built / existing” as well as physical security risk register for risk of sanctioned office raids.</li>
+<li><strong>Useful Data Sources</strong>:</li>
+</ul></li>
+<li><em>Robbery/Theft</em>
+<ul>
+<li><strong>Definition and Guiding Questions</strong>: Likelihood of (non-host nation) theft of user or office devices</li>
+<li><strong>Useful Data Sources</strong>: OSAC reports <a href="https://www.osac.gov/Pages/ContentReports.aspx?cid=2" class="uri">https://www.osac.gov/Pages/ContentReports.aspx?cid=2</a> , Pinkerton Risk Index <a href="https://www.pinkerton.com/risk-index/" class="uri">https://www.pinkerton.com/risk-index/</a> ,</li>
+</ul></li>
+</ul>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

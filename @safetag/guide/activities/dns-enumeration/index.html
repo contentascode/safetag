@@ -1,0 +1,130 @@
+<!DOCTYPE html><!--if lt IE 7<html class="ie ie6" lang="en">--><!--if IE 7<html class="ie ie7" lang="en">--><!--if IE 8<html class="ie ie8" lang="en">--><!--if (gte IE 9)|!(IE)<!--><html lang="en"> <!--
+--><html><head><meta charset="utf8"><title> &middot; SAFETAG</title><meta name="description" content=""><meta name="author" content=""><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link href="/safetag/@safetag/guide/filter.js/assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><link href="/safetag/@safetag/guide/filter.js/assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css"><link href="/safetag/@safetag/guide/filter.js/assets/css/stream.css" media="screen" rel="stylesheet" type="text/css"><link rel="stylesheet" href="/safetag/@safetag/guide/css/skeleton.css"><link rel="stylesheet" href="/safetag/@safetag/guide/css/selection.css"><link rel="stylesheet" href="/safetag/@safetag/guide/css/site.css"><link rel="stylesheet" href="/safetag/@safetag/guide/css/fonts.css"><script src="/safetag/@safetag/guide/filter.js/assets/js/jquery-1.11.3.min.js" type="text/javascript"></script><script src="/safetag/@safetag/guide/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script><script src="/safetag/@safetag/guide/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script><script src="/safetag/@safetag/guide/js/js-yaml.min.js"></script><script src="/safetag/@safetag/guide/js/sortable.min.js"></script><script src="/safetag/@safetag/guide/js/lodash.min.js"></script><script src="/safetag/@safetag/guide/js/filter.js"></script><script src="/safetag/@safetag/guide/js/anchor.min.js"></script><script src="/safetag/@safetag/guide/js/site.js"></script><link rel="shortcut icon" href="/safetag/@safetag/guide/img/favicon.ico"><link rel="apple-touch-icon" href="/safetag/@safetag/guide/img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="/safetag/@safetag/guide/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="/safetag/@safetag/guide/img/apple-touch-icon-114x114.png"><link rel="alternate" type="application/rss+xml" title="RSS" href="/safetag/@safetag/guide/atom.xml"></head><div class="navbar-spacer"></div><nav class="navbar navbar-fixed-top"><div class="container"><ul class="navbar-list"><li class="navbar-item"><a class="navbar-link" href="/safetag/@safetag/guide/">Home</a></li><li class="navbar-item"><a class="navbar-link" href="#" data-popover="#codeNavAbout">Methods</a><div class="popover" id="codeNavAbout"><ul class="popover-list"><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/preparation.guide">Preparation</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/context_research.guide">Context Research</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/capacity_assessment.guide">Capacity Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/reconnaissance.guide">Reconnaissance</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/network_discovery.guide">Network Discovery</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/network_access.guide">Network Access</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/network_mapping.guide">Network Mapping</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/user_device_assessment.guide">User Device Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/vulnerability_scanning.guide">Vulnerability Scanning and Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/data_assessment.guide">Data Asssessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/physical_assessment.guide">Physical Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/risk_modeling.guide">Process Mapping and Risk Modeling</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/threat_assessment.guide">Threat Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/responsive_support.guide">Responsive Support</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/guide/methods/follow_up.guide">Follow Up</a></li></ul></div></li><li class="navbar-item u-pull-right hidden" id="cd-cart-trigger"><a class="navbar-link cd-img-replace cd-cart" href="#0">Plan<i class="glyphicon glyphicon-list-alt"><span>0</span></i></a></li></ul></div></nav><body class="has-docked-nav" data-baseurl="/safetag/@safetag/guide"><div class="container"><div class="row links"><small><div class="crumb u-pull-left"><a href="/safetag/@safetag/guide">Home</a> / Activities  / Dns Enumeration</div><div class="utilities u-pull-right"><a href="https://github.com/SAFETAG/SAFETAG/edit/master/en/exercises/dns_enumeration/variant_zonetransfer.md">Edit</a> - <a href="https://github.com/SAFETAG/SAFETAG/commits/master/en/exercises/dns_enumeration/variant_zonetransfer.md">Changes</a> - <a href="https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/dns_enumeration/variant_zonetransfer.md">Source</a></div></small></div><div class="docs-section"><div class="space"> </div><h1 id="dns-enumeration">DNS Enumeration</h1>
+<h2 id="summary">Summary</h2>
+<p>DNS Stands for Domain Name Service. In a nutshell, what it does is translate hosts/computer's name into it's IP addresses. It provides a way to know the IP address of any given machine on the internet, with the corresponding URL, or domain. You can consider it as telephone directory of the Internet.</p>
+<p>DNS enumeration is one of your initial steps in your overall vulnerability assessment and audit. It is one stage where it will allow you to discover more potential targets. Upon completion of this assessment stage, you may find issues such as leaked information caused by default settings and server misconfigurations. Along with these, you can also have a broader scope of targets, such as internal server IP addresses, company netblocks and domain/subdomain names.</p>
+<p>DNS Enumeration can be accomplished with different number of tools along with different approaches. This guide will discuss some of the approaches and the tools required to perform each of the activities. You can perform DNS enumeration passively or actively, depending on your operational security needs.</p>
+<p><strong>Passive</strong>, or &quot;indirect&quot; approach refers to the enumeration process that doesn't send any traffic or packets from your machine, directly to your target. This can be done using 3rd tools such as online tools and cloud based scanners.</p>
+<p><strong>Active</strong>, or &quot;direct&quot; approach refers to sending DNS queries and enumeration tests directly to the target. Consider that traffic is send over the target which may leave traces or traffic logs coming from your source IP. Active techniques include Zone Transfer, Reverse Lookup, Domain and Host Brute-Forcing, Standard Record Enumeration (wildcard, SOA, MX, A, TXT etc), Cache snooping, and Zone Walking</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>System or VM running <a href="https://www.kali.org/downloads/">Kali Linux.</a></li>
+<li>Internet Connection (and possibly a VPN or tor setup)</li>
+<li>Target domain(s)</li>
+<li>Secure notetaking tool</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>These techniques can reveal your interest in the target organization to anyone in your network path, so consider using a VPN or tor to conduct searches.</li>
+<li>When performing &quot;active enumeration&quot; it is always good to ask to whitelisting your IPs whenever you perform assessments. This rules out the idea of attackers having able to avoid shunning. Whitelisting your IPs also removes false positive reports and inaccurate results</li>
+<li>It is important that we verify that we have the correct target domain(s) before proceeding with any of the scans/audits/assessments exercises within SAFETAG Framework. The last thing we wouldn't want to happen is to scan and enumerate target which is out of scope!)</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>The flexibility of having multiple options in performing a DNS enumeration activity is the key for a successful enumeration. As a practice, comparing results can help in assuring that the information we gather is accurate. Your investigation may be blocked by CloudFlare, a popular DDoS protection service. <a href="https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/">&quot;CloudFlair&quot;</a> provides some options in this case.</p>
+<p><strong>DNS Enumerations Tools:</strong></p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 71%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tools</th>
+<th>Description</th>
+<th>Type</th>
+<th>Technique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.robtex.com/">Robtex</a></td>
+<td>Gathers public information about IP numbers, domain names, host names, Autonomous systems, routes etc, then indexes the data in a big database and provide free access to that data</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="even">
+<td><a href="https://dnsdumpster.com/">DNSdumpster</a></td>
+<td>Free domain research tool that can discover hosts related to a domain, results with banners for HTTP, FTP, SSH &amp; Telnet</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="odd">
+<td><a href="https://centralops.net/co/">CentralOps-Domain Dossier</a></td>
+<td>Investigates domains and IP addresses. Gathers registrant information, DNS records, Network and Domain Whois Records, services scans and traceroutes</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="even">
+<td><a href="http://dnssec-debugger.verisignlabs.com/">DNSSEC Analyzer</a></td>
+<td>Checks for DNSSEC keys managment and configurations records</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="odd">
+<td><a href="https://bitbucket.org/LaNMaSteR53/recon-ng">Recon-ng</a></td>
+<td>Automated web reconnaissance framework written in Python. Complete with independent modules, database interaction, built-in convenience functions, interactive help and command completion.</td>
+<td>Script</td>
+<td>Active</td>
+</tr>
+<tr class="even">
+<td><a href="https://intodns.com/">IntoDNS</a></td>
+<td>IntoDNS checks the health and configuration of your DNS and provides report on MX records too. Provides suggestions to fix and improve findings</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.yougetsignal.com/tools/web-sites-on-web-server/">YougetSignal</a></td>
+<td>Helps you find other sites being hosted on a particular IP address, verifying if the target is using a shared hosting service</td>
+<td>Online</td>
+<td>Passive</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/darkoperator/dnsrecon">DNSRecon</a></td>
+<td>A Python script written by Carlos Perez for conducting DNS reconnaissance. It can enumerate general DNS records, perform zone transfers, perform reverse lookups, and brute-force subdomains among other functions. It will even perform Google scanning, automating the process we discussed in the Using Google to find subdomains section.</td>
+<td>Script</td>
+<td>Active</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/fwaeytens/dnsenum">DNSenum</a></td>
+<td>multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.</td>
+<td>Script</td>
+<td>Online</td>
+</tr>
+</tbody>
+</table>
+<p>Specific instructions for selected tools/techniques follows:</p>
+<h6 id="passive-third-party-and-online-tools">Passive: Third Party and Online Tools</h6>
+<p>:<a href="variant_using_online_tools_resources.md"></a></p>
+<h6 id="active-dnsrecon">Active: DNSrecon</h6>
+<p>:<a href="variant_dns_recon.md"></a></p>
+<h6 id="active-dnsenum">Active: DNSenum</h6>
+<p>:<a href="variant_dns_enum.md"></a></p>
+<h6 id="activedns-zone-transfer">Active:DNS Zone Transfer</h6>
+<p>:<a href="variant_dns_zonetransfer.md"></a></p>
+<h6 id="active-mx-records">Active: MX Records</h6>
+<p>:<a href="variant_mx_records.md"></a></p>
+<h2 id="recommendation">Recommendation</h2>
+<p>DNS is inherently public information, but we can still do a lot of steps to secure any parts of it which are revealing more private information. Fortinet provides a set of good recommendations:</p>
+<p><a href="https://blog.fortinet.com/2016/03/10/10-simple-ways-to-mitigate-dns-based-ddos-attacks" class="uri">https://blog.fortinet.com/2016/03/10/10-simple-ways-to-mitigate-dns-based-ddos-attacks</a></p>
+<p>If a zone transfer was successful, (most providers automatically limit anonymous zone transfers), you will need to work with their support team to prevent this, or switch to a different DNS provider. If your organization maintains its own DNS servers, the administrator of those servers should check the zone transfer policies to prevent anonymous transfers.</p>
+<h2 id="outputs">Outputs</h2>
+<ul>
+<li>A fuller map of the organization's online presence, including additional (potentially forgotten) hosts/services connected with the organization.<br />
+*Domains + IP addresses</li>
+<li>Subdomains + IP addresses</li>
+<li>MX Records + IP addresses</li>
+<li>DNSKeys</li>
+<li>SOA records, DNS records and registrar</li>
+<li>Domains hosted within the same IP address</li>
+<li>DNS history Records</li>
+<li>Domain Reputation (Web of Trust)</li>
+<li>Some of this information may already give you an idea of how your target's infrastructure setup. For example, you may see if the target domain goes into a CDN (Content Delivery Network) or sometimes DDoS mitigations services by finding out it's NS records. You can also identify if the target's MX records are behind a DLP (Data Leakage Prevention) systems.</li>
+<li>The output of your DNS enumeration might contain &quot;more&quot; information about the client organization (internal DNS records, hostnames, router names, additional IP addresses). This data is sometimes caused by misconfigured DNS or default service configurations, so look for misleading and false-positive results.</li>
+</ul>
+</div></div></body><div class="section categories"><div class="container"><div class="row"><div class="two columns">&nbsp;</div><div class="eight column category"><h4>Developed with ❤ by</h4><a href="https://iilab.org"><img class="u-max-full-width" src="/safetag/@safetag/guide/img/iilab_white.svg"></a><h5>Information Innovation Lab</h5><p>Applied research and development of public interest technology.</p></div><div class="two columns">&nbsp;</div></div></div></div><script>$( document ).ready(function() {
+  anchors.options.placement = 'left';
+  anchors.add('h1,h2,h3');
+})
+</script></html>

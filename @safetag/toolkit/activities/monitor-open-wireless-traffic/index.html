@@ -1,0 +1,92 @@
+<!DOCTYPE html><!--if lt IE 7<html class="ie ie6" lang="en">--><!--if IE 7<html class="ie ie7" lang="en">--><!--if IE 8<html class="ie ie8" lang="en">--><!--if (gte IE 9)|!(IE)<!--><html lang="en"> <!--
+--><html><head><meta charset="utf8"><title> &middot; SAFETAG</title><meta name="description" content=""><meta name="author" content=""><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><link href="/safetag/@safetag/toolkit/filter.js/assets/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"><link href="/safetag/@safetag/toolkit/filter.js/assets/css/jquery-ui-1.10.2.custom.min.css" media="screen" rel="stylesheet" type="text/css"><link href="/safetag/@safetag/toolkit/filter.js/assets/css/stream.css" media="screen" rel="stylesheet" type="text/css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/skeleton.css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/selection.css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/site.css"><link rel="stylesheet" href="/safetag/@safetag/toolkit/css/fonts.css"><script src="/safetag/@safetag/toolkit/filter.js/assets/js/jquery-1.11.3.min.js" type="text/javascript"></script><script src="/safetag/@safetag/toolkit/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script><script src="/safetag/@safetag/toolkit/filter.js/assets/js/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script><script src="/safetag/@safetag/toolkit/js/js-yaml.min.js"></script><script src="/safetag/@safetag/toolkit/js/sortable.min.js"></script><script src="/safetag/@safetag/toolkit/js/lodash.min.js"></script><script src="/safetag/@safetag/toolkit/js/filter.js"></script><script src="/safetag/@safetag/toolkit/js/anchor.min.js"></script><script src="/safetag/@safetag/toolkit/js/site.js"></script><link rel="shortcut icon" href="/safetag/@safetag/toolkit/img/favicon.ico"><link rel="apple-touch-icon" href="/safetag/@safetag/toolkit/img/apple-touch-icon.png"><link rel="apple-touch-icon" sizes="72x72" href="/safetag/@safetag/toolkit/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="/safetag/@safetag/toolkit/img/apple-touch-icon-114x114.png"><link rel="alternate" type="application/rss+xml" title="RSS" href="/safetag/@safetag/toolkit/atom.xml"></head><div class="navbar-spacer"></div><nav class="navbar navbar-fixed-top"><div class="container"><ul class="navbar-list"><li class="navbar-item"><a class="navbar-link" href="/safetag/@safetag/toolkit/">Home</a></li><li class="navbar-item"><a class="navbar-link" href="#" data-popover="#codeNavAbout">Methods</a><div class="popover" id="codeNavAbout"><ul class="popover-list"><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/preparation.guide">Preparation</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/context_research.guide">Context Research</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/capacity_assessment.guide">Capacity Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/reconnaissance.guide">Reconnaissance</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/network_discovery.guide">Network Discovery</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/network_access.guide">Network Access</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/network_mapping.guide">Network Mapping</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/user_device_assessment.guide">User Device Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/vulnerability_scanning.guide">Vulnerability Scanning and Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/data_assessment.guide">Data Asssessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/physical_assessment.guide">Physical Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/risk_modeling.guide">Process Mapping and Risk Modeling</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/threat_assessment.guide">Threat Assessment</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/responsive_support.guide">Responsive Support</a></li><li class="popover-item"><a class="popover-link" href="/safetag/@safetag/toolkit/methods/follow_up.guide">Follow Up</a></li></ul></div></li><li class="navbar-item u-pull-right hidden" id="cd-cart-trigger"><a class="navbar-link cd-img-replace cd-cart" href="#0">Plan<i class="glyphicon glyphicon-list-alt"><span>0</span></i></a></li></ul></div></nav><body class="has-docked-nav" data-baseurl="/safetag/@safetag/toolkit"><div class="container"><div class="row links"><small><div class="crumb u-pull-left"><a href="/safetag/@safetag/toolkit">Home</a> / Activities  / Monitor Open-Wireless-Traffic</div><div class="utilities u-pull-right"><a href="https://github.com/SAFETAG/SAFETAG/edit/master/en/exercises/monitor_open_wireless_traffic/summary.md">Edit</a> - <a href="https://github.com/SAFETAG/SAFETAG/commits/master/en/exercises/monitor_open_wireless_traffic/summary.md">Changes</a> - <a href="https://github.com/SAFETAG/SAFETAG/blob/master/en/exercises/monitor_open_wireless_traffic/summary.md">Source</a></div></small></div><div class="docs-section"><div class="space"> </div><h1 id="monitor-open-wireless-traffic">Monitor Open Wireless Traffic</h1>
+<h2 id="summary">Summary</h2>
+<p>It can be valuable to to listen to broadcast wireless traffic at the physical office location, even before knowing anything about the organization's network itself. This outside, passive information gathering can reveal a surprising amount of data on not only what devices are connecting to which networks, but also what type of devices they are (based on their unique MAC addresses), and what other networks those devices have historically connected to. These probes can reveal personal, organizational, locational, and device information that, taken in context, can be dangerous or lead to other vulnerabilities.</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>Wifi card (and drivers) that can be set to monitor mode.</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Despite this exercise covering only broadcast data, check the local laws which might cover this process before conducting it.</li>
+<li>Consider how it looks to third parties as you are scanning a network, especially from outside an office.</li>
+<li>Confirm that all devices you are accessing/scanning belong to the organization.</li>
+<li>Delete all devices from your scan that do not belong to the organization.</li>
+<li>Study outputs for any obviously embarrassing personal information (especially network beacon records) before sharing.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<h6 id="step-1-monitor-mode">Step 1: Monitor Mode</h6>
+<p>You should disconnect from any wifi network you may be connected to to capture the widest amount of data.</p>
+<p>Switch your wireless adapter to monitor mode**</p>
+<p><code>$ airmon-ng start &lt;interface&gt;</code></p>
+<p>You may need to stop your network manager system to prevent it from interfering. Running</p>
+<p><code>$ airmon-ng check</code></p>
+<p>to list anything that is causing problems, and</p>
+<p><code>$ airmon-ng check kill</code></p>
+<p>to try and stop them automatically, and running stop network-manager &amp;&amp; stop avahi-daemon may keep them from re-starting automatically.</p>
+<h6 id="step-2-listen-for-wifi-probes.">Step 2: Listen for wifi probes.</h6>
+<p>Run airodump-ng on the monitor mode interface (usually mon0). This listens to wifi beacons and you can begin analyzing who is on what network, and see historical networks.</p>
+<p><code>airodump-ng -w filename mon0</code></p>
+<p>This scans all networks and channels, collecting broadcast network information. Note that, despite its broadcast nature, this is privacy invasive and can be considered illegal: <a href="http://www.slate.com/blogs/future_tense/2013/09/16/google_street_view_wi_fi_snooping_case_good_news_and_bad_news.html" class="uri">http://www.slate.com/blogs/future_tense/2013/09/16/google_street_view_wi_fi_snooping_case_good_news_and_bad_news.html</a> . You can restict this to a specific channel or base station ID (BSSID) with -c and --bssid:</p>
+<p><code>airodump-ng -c 1 --bssid 00:11:22:33:44:55 -w filename mon0</code></p>
+<h6 id="step-3-de-auth-optional">Step 3: de-auth (optional)</h6>
+<p>Send de-authentication packets to force clients to reconnect and send out additional probes. Take note that by its very nature, de-authentication causes annoying interruptions to wifi traffic. <strong>This breaks connections, drops skype calls, and can make the wireless network temporarily unusable -- Make sure to check with staff before going through this</strong> (to make sure no one is doing a live webcast or on an important VOIP call, and to expect some network instability).</p>
+<pre><code>$ aireplay-ng -0 1 -a 00:11:22:33:44:55 -c AA:BB:CC:DD:EE:FF mon0
+
+ 15:54:48  Waiting for beacon frame (BSSID: 00:11:22:33:44:55) on channel 1
+ 15:54:49  Sending 64 directed DeAuth. STMAC: [AA:BB:CC:DD:EE:FF] [ 5| 3 ACKs]</code></pre>
+<p>This command de-authenticates one targeted user with one attempted deauth packet. &quot;-0 10&quot; would try 10 times (potentially disconnecting the user multiple times!). With permission, you can also target all users on a network by leaving out the &quot;-c ...&quot; flag.</p>
+<p>There are scripts, like wifijammer, which use this same approach to jam <em>all</em> wifi connections in range of the attacking computer, so check against the documentation at <a href="http://www.aircrack-ng.org" class="uri">http://www.aircrack-ng.org</a> and act responsibly to protect yourself and the organization.</p>
+<h6 id="step-4-mac-address-research">Step 4: MAC Address Research</h6>
+<p>The first three hex numbers of each MAC address designate the vendor, which can reveal useful information in matching MAC addresses to devices. The MAC address is a unique identifier, so never post or search using the full address. Note that increasingly, devices are using MAC address randomization, but if it implemented, it often is poorly implemented against even minimally determined adversaries, as per this <a href="https://www.theregister.co.uk/2017/03/10/mac_address_randomization/">2017 research study</a>.</p>
+<p>To compare found MAC addresses to the bendor database offline you can download the full vendor database from <a href="https://regauth.standards.ieee.org/standards-ra-web/pub/view.html#registries">IEEE</a> or use the <a href="https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=manuf">Wireshark list</a></p>
+<h6 id="step-4-ongoing-monitoring">Step 4: Ongoing Monitoring</h6>
+<p>The longer you leave this running (particularly when staff are first entering the office or returning after lunch/meetings), the better sense of what devices are connected to the network you will get.</p>
+<p>Watch what probes the various devices are sending out (especially when they are deauthenticated, as above). You will see each computer on the network, as identified by their mac addresses, broadcast information about previous networks to which they have connected.</p>
+<pre><code>BSSID              STATION            PWR   Rate    Lost    Frames Probe
+
+00:11:22:33:44:55   0F:3E:DF:DA:2D:E2   -67 0   0   234567  SampleOrg,linksys¸John Smith&#39;s iPhone,Free Public Wifi
+00:11:22:33:44:55   F8:7E:FC:03:CC:43   -80 -24 0   234567  amygreen,SampleOrg,android-hotspot,Starbucks,united_club,Dulles Airport WiFi
+00:11:22:33:44:55   F8:19:F3:DF:75:19   -58 -54 0   234567  SampleOrg
+00:11:22:33:44:55   38:08:95:EB:7E:0B   -75 -12 0   234567  HolidayInn,SampleOrg,John Smith&#39;s Mac mini,android-hotspot</code></pre>
+<h2 id="recommendation">Recommendation</h2>
+<h6 id="recommendation-cleanse-wifi-network-connection-history">Recommendation: Cleanse wifi network connection history</h6>
+<p>For most devices, deleting networks from the “saved” network list will stop them from being probed. Obviously, this can be an annoyance for networks you regularly connect to, so renaming these networks to non-revealing names would help, as would creating non-name-associated “guest” networks for colleagues connecting to your home network.</p>
+<p>On iPhones and iPads, it is not possible to selectively remove historical networks unless you are currently in range of that network. It is however possible to remove all history: go to Settings &gt; General &gt; Reset &gt; Reset Network Settings . When you take this step, it is worth going through this reset multiple times – approximately once per year of device ownership, as the first reset appears to only remove recently-connected networks, and older networks will be broadcast.</p>
+<h6 id="recommendation-use-innocuous-network-names">Recommendation: Use innocuous network names</h6>
+<p>Organizations may want to choose innocent or generic network names, and/or not broadcast network names. It is worth noting that devices seeking out hidden networks will &quot;beacon&quot; for the actual network name, so this has extremely limited security use and must be combined with other protective measures. See this <a href="https://www.acrylicwifi.com/en/blog/hidden-ssid-wifi-how-to-know-name-of-network-without-ssid/">Acrylic blog post</a> for further details.</p>
+<p>It is worth noting that wifi access points are also tracked to assist in location services, and as such the location of a wireless network can be learned from its name or the MAC address of the access point. <a href="https://wigle.net/">WiGLE</a> is a community-managed database for such information, but both Google and Microsoft, and likely many others, also track this locational information, so the opt-out information below is only minimally useful.</p>
+<p><strong>Removal options:</strong><br />
+See <a href="https://en.wikipedia.org/wiki/Wi-Fi_positioning_system#Public_Wi-Fi_location_databases">wikipedia</a> for public listings. Some opt-out options exist below:</p>
+<ul>
+<li>WiGLE: <a href="https://wigle.net/faq">WiGLE's FAQ</a>: &quot;To have your record removed from our database, or if you have any questions or suggestions, send an email to: WiGLE-admin [at] WiGLE.net […] include the BSSID (Mac Address) of the network in question!&quot;</li>
+<li>Google Location services : <a href="https://support.google.com/maps/answer/1725632?hl=en" class="uri">https://support.google.com/maps/answer/1725632?hl=en</a></li>
+<li>Mozilla Location Services: follows the Google standard of adding _nomap to a wifi name.</li>
+<li>Microsoft Location Services: <a href="https://support.microsoft.com/en-us/help/20039/opt-out-of-location-services" class="uri">https://support.microsoft.com/en-us/help/20039/opt-out-of-location-services</a> ; See also using _optout and <a href="https://www.wired.com/2015/07/share-not-share-wi-fi-windows-10/">blocking wifi login information in Windows 10</a></li>
+<li>Apple: No clear opt out, more information: <a href="https://www.apple.com/newsroom/2011/04/27Apple-Q-A-on-Location-Data/" class="uri">https://www.apple.com/newsroom/2011/04/27Apple-Q-A-on-Location-Data/</a></li>
+<li>Skyhook: <a href="http://www.skyhookwireless.com/opt-out-of-skyhook-products" class="uri">http://www.skyhookwireless.com/opt-out-of-skyhook-products</a></li>
+</ul>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->
+</div></div></body><div class="section categories"><div class="container"><div class="row"><div class="two columns">&nbsp;</div><div class="eight column category"><h4>Developed with ❤ by</h4><a href="https://iilab.org"><img class="u-max-full-width" src="/safetag/@safetag/toolkit/img/iilab_white.svg"></a><h5>Information Innovation Lab</h5><p>Applied research and development of public interest technology.</p></div><div class="two columns">&nbsp;</div></div></div></div><script>$( document ).ready(function() {
+  anchors.options.placement = 'left';
+  anchors.add('h1,h2,h3');
+})
+</script></html>

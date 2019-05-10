@@ -1,0 +1,91 @@
+<h1 id="suspicious-activity-analysis">Suspicious Activity Analysis</h1>
+<h2 id="summary">Summary</h2>
+<p>Malware is a common tactic to target organizations. Malware like a Remote Access Trojan (or RAT) can provide an attacker with backdoor access to a targeted machine, enabling the attacker to steal information, record audio and video, as well as run commands on the infected machine.</p>
+<p>To stop this from happening, you have to identify the malicious process within the system and stop it, or reformatting the machine in case you don’t feel spending time on stopping the malicious process.</p>
+<p>It’s important to keep evidence, in case the auditee still has access to the original malicious software they received (e.g., an email, etc.), keep a copy of the file if you have the time and expertise to continue investigating or have the resources to submit it to other organizations working on analyzing such issues.</p>
+<p>Scanning the possible infected machine or the original suspicious file with an anti-virus will save you time and effort, in the case such malware is already in its database. Scanning should always be the first step, preventing you from spending excess time if the machine was infected with a less serious piece of malware.</p>
+<p>After determining the machine is infected, you can proceed in helping the staff member back up their information, scanning the files for malware, then reformatting the infected machine. Note, it is very difficult to clean an infected machine if you only have a short window of time.</p>
+<p>In case the machine was infected, taking an image of the operating system will allow you to replicate the infected machine and run it after you finish your audit for a more in-depth investigation or send it to an expert to work on investigating the malware. Note, this also can be difficult in an audit setting where time is limited. Also see operational security considerations that come with replicating the files of a staff member of a sensitive organization. Be sure this is absolutely necessary and the staff members provides consent before completing.</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>An Incident Response Plan agreed upon with the organization</li>
+<li>An emergency contact for the organization</li>
+<li>A Kali Virtual machine connected to the Internet</li>
+<li>A <a href="https://cuckoosandbox.org/">Cuckoo Sandbox</a> installation (for later analysis post audit if you have the expertise)</li>
+<li>VPN</li>
+<li>USB drive(s)</li>
+<li>Large capacity External Hard disk, OS installation media and license keys</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Consider the time you have, investigating malware can take days (you should not investigate during the audit itself)</li>
+<li>Confirm that the device belongs to the organization</li>
+<li>Make sure to take the device offline before start working on it</li>
+<li>Don’t transfer files from the infected machine to any other machines</li>
+<li>Use a USB drive to move files from the infected machine to your Audit machine for investigating proposes</li>
+<li>Study outputs for any obviously embarrassing personal information</li>
+<li>Don’t test anything on your virtual machine without VPN</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<ul>
+<li><p>In case they still have the original binaries (Attachment, email..etc.)</p>
+<ol>
+<li><p>Download the file to your auditing machine, Scan the file via Anti-Virus or hash the file and use virustotal.com to search for it (Note, don’t upload the actual file to virus total as uploaded files are discoverable by paid subscribers in most cases)</p></li>
+<li><p>Check the email’s header and see if it looks suspicious</p></li>
+</ol></li>
+<li><p>In case there is no binaries (Attachment, email..etc.) or they have no access to it</p>
+<ol>
+<li><p>Take the machine offline</p></li>
+<li><p>In case you have time, Image the hard disk</p></li>
+<li><p>Help the auditees to operate another machine to fill the gap of the suspicious machine</p></li>
+<li><p>Run a non-depth scan for the machine and try to locate any suspicious files</p></li>
+<li><p>Collect the suspicious files, hash them, then search for them on virustotal.com</p></li>
+<li><p>Scan the open ports and monitor which applications is connected to external address</p></li>
+</ol></li>
+</ul>
+<p>The next sections often are highly interrelated - a phishing email may include malicious URLs and/or files, network traffic may include URLs, URLs may try to send malicious file downloads.</p>
+<p><strong>Questions to ask the user / organization</strong></p>
+<ul>
+<li>What suspicious behaviors are you witnessing?</li>
+<li>Where and when are you seeing this behavior? What makes you feel that the machine is somehow infected?</li>
+<li>Do you have an alternative to this machine/process/account you can use it until we clear things up?</li>
+<li>Did you receive any suspicious or unexpected email, attachment or different form of communication that made you feel this way?</li>
+<li>Do you still have access to the original email, attachment or any form of communication?</li>
+</ul>
+<hr />
+<h6 id="phishing-or-suspicious-emails">Phishing or Suspicious Emails</h6>
+<p>:<a href="variant_phishing.md"></a></p>
+<hr />
+<h6 id="malicious-files">Malicious Files</h6>
+<p>:<a href="variant_malicious_file.md"></a></p>
+<hr />
+<h6 id="suspicious-urls">Suspicious URLs</h6>
+<p>:<a href="variant_urls.md"></a></p>
+<hr />
+<h6 id="suspicious-processes">Suspicious Processes</h6>
+<p>:<a href="variant_suspicious_process.md"></a></p>
+<hr />
+<h6 id="unusual-network-traffic">Unusual Network Traffic</h6>
+<p>Advanced threats may be identified during the network scanning and traffic analysis. See the Network Scanning and Traffic Analysis activities.</p>
+<hr />
+<h6 id="threat-hunting">Threat Hunting</h6>
+<p>:<a href="variant_threathunting.md"></a></p>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

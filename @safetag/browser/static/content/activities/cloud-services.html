@@ -1,0 +1,59 @@
+<h1 id="assessing-usage-of-cloud-services">Assessing Usage of Cloud Services</h1>
+<h2 id="summary">Summary</h2>
+<p>During the organizational assessment you will almost certainly come across 3rd party cloud-based service providers being used by the audited organization. The organization may be interested in your assessment of the security of those services. This poses several challenges to you as an auditor:</p>
+<pre><code>* auditing 3rd party web applications almost certainly falls outside of the scope of the audit engagement
+* you likely do not have an agreement with the service provider to scan their application
+* a proper assessment would take more time than is available for the organizational audit
+* you may not be familiar with the service or technology it is built on</code></pre>
+<p>Despite these challenges, significant organizational processes and sensitive data may reside on or rely upon those 3rd party applications. It can be important to the audit to provide some preliminary investigation and risk assessment into the usage of any 3rd party cloud services they rely upon.</p>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Auditing 3rd party services <strong>must be negotiated directly with the service provider</strong> and adds significant complexity to the process (and would normally fall out of scope). There are often serious legal issues involved in auditing outside of a formal, signed agreement.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>It is increasingly difficult to run complex organizations without some reliance on cloud-based service providers such as email hosting, web hosting, or document management/backup. Organizations (and as assisted by the auditor) should review their options in the selection of cloud providers, and in parallel consider ways to apply practices and policies to their use to meet organizational security requirements.</p>
+<h5 id="cloud-service-provider-review">Cloud Service Provider Review</h5>
+<ul>
+<li>In conjunction with Data Mapping, review what data is stored in which cloud service(s), and who (organizationally) has access to that data.</li>
+<li>Map out what data and/or metadata the provider has access to</li>
+<li>Review the posted Terms of Service and Privacy Policies</li>
+<li>Review the transparency report of the provider and what jurisdictions it operates in. Are there local data storage laws in effect?</li>
+<li>Does the provider have account protection services meeting the requirements of the organization (e.g. 2FA)</li>
+<li>Search for security breaches impacting the service, and review their response (See <a href="https://haveibeenpwned.com/PwnedWebsites" class="uri">https://haveibeenpwned.com/PwnedWebsites</a>). Note that a breach itself is not cause to not use a service, but revelations on what was breached and how quickly, transparently, and effectively the provider responded should impact decisions.</li>
+<li>Where relevant, review any security/product whitepapers posted on their service and implementation.</li>
+<li>Look for any records (and/or request from the company) information about audits of their systems/code</li>
+</ul>
+<h5 id="internalorganizational-considerations">Internal/Organizational Considerations</h5>
+<ul>
+<li>Back-up and availability - One of the major risks with an external service is that they will go out of business and/or the data might become inaccessible due to factors outside of the organization's control. Does the provider have guarantees in terms of availability here, and/or what practices can the organization leverage to have additional backup/export options.</li>
+<li>Is the organization implementing the best practices put in place by the company offering the service? E.g login processes - 2FA..</li>
+<li>What are the password management practices for the cloud/web based services? Account credentials - who opened the accounts and how they are accessible in their absence?</li>
+<li>How are logins to the service managed when employees leave or when temporary access is required for a contractor or partner?</li>
+</ul>
+<h2 id="recommendation">Recommendation</h2>
+<p>Schedule regular (annual?) reviews of the external services to ensure that they meet organizational requirements for functionality and security, business solvency, and exporting or transferring of data.</p>
+<p>When considering formalizing the use of new 3rd party services, review the questions and processes here to help guide the decision.</p>
+<h2 id="outputs">Outputs</h2>
+<ul>
+<li>A list of all identified 3rd party / cloud services in use</li>
+<li>A mapping of what data and metadata and which users have access on which providers</li>
+</ul>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

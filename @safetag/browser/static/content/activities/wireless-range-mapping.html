@@ -1,0 +1,42 @@
+<h1 id="wireless-range-mapping">Wireless Range Mapping</h1>
+<h2 id="summary">Summary</h2>
+<p>This component allows the auditor to show the &quot;visibility&quot; of an organization's wireless network to determine how far the organization's wireless network extends beyond a controlled area. Wireless networks are often trusted as equivalent to the hardwired office networks they have largely replaced, but they have important differences. Wireless networks are often &quot;visible&quot; from outside the walls of the office - from common spaces or even the street. Without further access, this reveals a wealth of information about the organization's size and the type of devices connecting to their network.</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>A portable wireless device (like an Android phone/tablet) is useful to map the network boundaries without causing undue suspicion. Some Apps like <a href="https://play.google.com/store/apps/details?id=cz.webprovider.wifianalyzer">Wifi analyzer</a> and <a href="https://play.google.com/store/apps/details?id=com.osiris_mobile.wifimapper&amp;hl=en">Wifi Mapper</a> can help.</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Despite this exercise covering only broadcast data, check the local laws which might cover this process before conducting it.</li>
+<li>Consider how it looks to third parties as you are scanning a network, especially from outside an office.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>Map the range of the organizations wireless network outside of office space, using wifite or other tools to track network strength.</p>
+<p>A variety of apps and tools can support this work without resorting to professional &quot;wifi site survey&quot; tools. If the Office Mapping exercise has taken place, that map can serve as the starting point to expand the map outside the office. If using a third party tool or app, ensure that the app is not sharing sensitive data. Using simple signal strength monitors in combination with location notes is more than sufficient. In Linux systems, one can use wavemon, kismet, wifite, and even the networkmanager command line tools to track visible networks and their strengths <a href="https://askubuntu.com/questions/237777/is-there-a-tool-like-wifi-analyzer-for-ubuntu">as described on StackExchange</a>:</p>
+<pre><code>watch  &quot;nmcli -f &quot;CHAN,BARS,SIGNAL,SSID&quot; d wifi list ifname wlx10feed21ae1d  | sort -n&quot;</code></pre>
+<ul>
+<li><a href="https://www.netspotapp.com/" class="uri">https://www.netspotapp.com/</a> (OSX, Windows, free for non-commercial uses)</li>
+<li><a href="http://wifianalyzer.mobi" class="uri">http://wifianalyzer.mobi</a>, <a href="http://wifiheat.com/" class="uri">http://wifiheat.com/</a> (Android)</li>
+</ul>
+<h2 id="recommendation">Recommendation</h2>
+<p>Depending on office layout, moving the wireless access point may help to reduce how far the network is transmitted outside of the office space, and changing devices which do not move to better enable this without loss of functionality.</p>
+<p>See also Monitoring Open Wireless Traffic recommendations and Network Access security recommendations.</p>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

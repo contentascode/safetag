@@ -1,0 +1,125 @@
+{
+  "methods": {
+    "1": {
+      "id": "1",
+      "name": "Preparation"
+    },
+    "2": {
+      "id": "2",
+      "name": "Context Research"
+    },
+    "3": {
+      "id": "3",
+      "name": "Capacity Assessment"
+    },
+    "4": {
+      "id": "4",
+      "name": "Reconnaissance",
+      "summary": "./reconnaissance/summary.md",
+      "purpose": "./"
+    },
+    "5": {
+      "id": "5",
+      "name": "Network Discovery"
+    },
+    "6": {
+      "id": "6",
+      "name": "Network Access"
+    },
+    "7": {
+      "id": "7",
+      "name": "Network Mapping"
+    },
+    "8": {
+      "id": "8",
+      "name": "User Device Assessment"
+    },
+    "9": {
+      "id": "9",
+      "name": "Vulnerability Scanning and Assessment"
+    },
+    "10": {
+      "id": "10",
+      "name": "Data Asssessment"
+    },
+    "11": {
+      "id": "11",
+      "name": "Physical Assessment"
+    },
+    "12": {
+      "id": "12",
+      "name": "Process Mapping and Risk Modeling"
+    },
+    "13": {
+      "id": "13",
+      "name": "Threat Assessment"
+    },
+    "14": {
+      "id": "14",
+      "name": "Responsive Support"
+    },
+    "15": {
+      "id": "15",
+      "name": "Follow Up"
+    }
+  },
+  "activities": {
+    "1": {
+      "id": "1",
+      "id_method": "1",
+      "name": "Test",
+      "time": 0,
+      "tech": true,
+      "research": false,
+      "interpersonal": false,
+      "content": "./activities/",
+      "id_summary": "1",
+      "id_preparation": "./activities/automated_reconnaissance/preparation.md"
+    },
+    "10": {
+      "id": "10",
+      "id_method": "4",
+      "name": "Automated Reconnaissance",
+      "time": 42,
+      "tech": true,
+      "research": false,
+      "interpersonal": false,
+      "content": "./activities/",
+      "id_summary": "1",
+      "id_preparation": "./activities/automated_reconnaissance/preparation.md"
+    },
+    "11": {
+      "id": "11",
+      "id_method": "4",
+      "name": "Manual Reconnaissance",
+      "time": 32,
+      "tech": true,
+      "research": true,
+      "interpersonal": false,
+      "content": "./activities/",
+      "id-summary": "1",
+      "id-preparation": "./activities/automated_reconnaissance/preparation.md"
+    },
+    "12": {
+      "id": "12",
+      "id_method": "4",
+      "name": "Anonymous Zone Transfer",
+      "time": 99,
+      "tech": true,
+      "research": false,
+      "interpersonal": true,
+      "content": "./activities/",
+      "id-summary": "1",
+      "id-preparation": "./activities/automated_reconnaissance/preparation.md"
+    }
+  },
+  "content": {
+    "1": {
+      "html": "./content/test.html"
+    },
+    "2": {
+      "html": "./content/methods/reconnaissance.html"
+    },
+    "3": {}
+  }
+}

@@ -1,0 +1,2041 @@
+{
+  "methods": {
+    "0": {
+      "id": "0",
+      "name": "Introduction",
+      "description": "The Security Auditing Framework and Evaluation Template for Advocacy Groups (SAFETAG) is a professional audit framework that adapts traditional penetration testing and risk assessment methodologies to be relevant to small,...",
+      "content": "document_matter/introduction"
+    },
+    "1": {
+      "id": "1",
+      "name": "Preparation",
+      "description": "Preparation",
+      "content": "methods/preparation"
+    },
+    "2": {
+      "id": "2",
+      "name": "Context Research",
+      "description": "This component allows the auditor to identify the relevant regional and technological context needed to provide a safe and informed SAFETAG audit. This component consists of desk research that is collected and analyzed by the auditor, as...",
+      "content": "methods/context_research"
+    },
+    "3": {
+      "id": "3",
+      "name": "Capacity Assessment",
+      "description": "In this component the auditor engages with staff through interviews and conversations to identify the organization's strengths and weakness (expertise, finance, willingness to learn, staff time, etc.) to adopting new digital and physical...",
+      "content": "methods/capacity_assessment"
+    },
+    "4": {
+      "id": "4",
+      "name": "Reconnaissance",
+      "description": "The remote assessment methodology focuses on direct observation of an organization and their infrastructure, consisting of passive reconnaissance of publicly available data sources (Open Source Intelligence) This allows the auditor to...",
+      "content": "methods/reconnaissance"
+    },
+    "5": {
+      "id": "5",
+      "name": "Network Mapping",
+      "description": "This component allows the auditor to identify security issues with the host's network and map the devices on a host's network, the services that are being used by those devices, and any protections in...",
+      "content": "methods/network_mapping"
+    },
+    "6": {
+      "id": "6",
+      "name": "Organizational Device Usage",
+      "description": "This component allows the auditor to discover and assess the security of the devices on the network and/or used in the organization. This component consists of interviews, surveys, network mapping, and inspection of...",
+      "content": "methods/organizational_device_assessment"
+    },
+    "7": {
+      "id": "7",
+      "name": "User Device Assessment",
+      "description": "This component allows the auditor to assess the security of the individual devices on the network. This component consists of interviews, surveys, and inspection of...",
+      "content": "methods/user_device_assessment"
+    },
+    "8": {
+      "id": "8",
+      "name": "Vulnerability Scanning and Analysis",
+      "description": "This component has the auditor discover possible flaws the organization's devices, services, application designs, and networks by testing and comparing them against a variety of online and offline resources (vulnerability databases, vendor...",
+      "content": "methods/vulnerability_scanning"
+    },
+    "9": {
+      "id": "9",
+      "name": "Data Assessment",
+      "description": "This component allows the auditor to identify what sensitive data exists for the organization, where it is stored, and how it is...",
+      "content": "methods/data_assessment"
+    },
+    "10": {
+      "id": "10",
+      "name": "Physical and Operational Security",
+      "description": "The organizational security methodology is focused on how to mitigate against threats that occur because of the arrangement of digital assets in the physical world -- how secure are the devices at an organization's office, where and how...",
+      "content": "methods/operational_security"
+    },
+    "11": {
+      "id": "11",
+      "name": "Process Mapping and Risk Modeling",
+      "description": "This component allows an auditor to lead the host organization's staff in a series of activities to identify and prioritize the processes that are critical for the organization to carry out its work.  These activities will also reveal the...",
+      "content": "methods/risk_modeling"
+    },
+    "12": {
+      "id": "12",
+      "name": "Responding to Advanced Threats",
+      "description": "This component allows the auditor to be able to identify, triage, and analyze suspicious behavior on a device or in a network. Depending on the analysis, the auditor may need to further investigate a malware infection, analyze a binary and...",
+      "content": "methods/advanced_threat"
+    },
+    "13": {
+      "id": "13",
+      "name": "Threat Assessment",
+      "description": "This objective uses a variety of activities to  identify possible attackers and gather background information about the capability of those attackers to threaten the organization. This consists of identifying a particular attacker's...",
+      "content": "methods/threat_assessment"
+    },
+    "14": {
+      "id": "14",
+      "name": "Responsive Support",
+      "description": "The auditor provides assistance for any immediate action needed (spot training, tool fixes, consulting on upcoming projects) -- this may also involve addressing vulnerabilities that triggered an incident...",
+      "content": "methods/responsive_support"
+    },
+    "15": {
+      "id": "15",
+      "name": "Debrief",
+      "description": "This component consists of an out-brief to key points of contact, providing basic pressure relief through group and individual interactions, and planning future follow-up with the host and key...",
+      "content": "methods/debrief"
+    },
+    "16": {
+      "id": "16",
+      "name": "Follow Up",
+      "description": "This component allows an auditor to explain and get feedback on their report as well as evaluate the success of the process over time through a continued relationship with the host.This component consists of the final meeting with the...",
+      "content": "methods/follow_up"
+    },
+    "17": {
+      "id": "17",
+      "name": "Recommendation Development and Resource Identification",
+      "description": "Recommendation Development and Resource Identification",
+      "content": "methods/recommendation_development"
+    },
+    "18": {
+      "id": "18",
+      "name": "Roadmap Development",
+      "description": "Roadmap Development",
+      "content": "methods/roadmap_development"
+    },
+    "19": {
+      "id": "19",
+      "name": "Report Creation",
+      "description": "Report Creation",
+      "content": "methods/report_creation"
+    }
+  },
+  "activities": {
+    "0": {
+      "id": "0",
+      "name": "The Life Cycle of an Audit",
+      "description": "The audit process in very cyclical. Newly identified threats, vulnerabilities, capabilities, and barriers impact activities that have and have yet to be run. At the same time the auditor, through...",
+      "layout": "page.pug",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/document_matter/audit_lifecycle.md",
+      "categories": [
+        "document_matter/introduction"
+      ],
+      "collection": [],
+      "source": "/document_matter/audit_lifecycle.md",
+      "id_method": "0",
+      "content": "document_matter/audit_lifecycle"
+    },
+    "1": {
+      "id": "1",
+      "name": "Risk Assessment & Analysis",
+      "description": "Functionally, SAFETAG is a digital risk assessment framework. Risk assessment a systematic approach to identifying and assessing risks associated with hazards and human activities. SAFETAG focuses this...",
+      "layout": "page.pug",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/document_matter/risk_assessment.md",
+      "categories": [
+        "document_matter/introduction"
+      ],
+      "collection": [],
+      "source": "/document_matter/risk_assessment.md",
+      "id_method": "0",
+      "content": "document_matter/risk_assessment"
+    },
+    "2": {
+      "id": "2",
+      "name": "Agency Building",
+      "description": "SAFETAG differs from many risk assessment tools because it aims to build the host's and staff's capacity so that they are able to address the risks that the auditor has identified. SAFETAG is designed to provide...",
+      "layout": "page.pug",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/document_matter/agency_building.md",
+      "categories": [
+        "document_matter/introduction"
+      ],
+      "collection": [],
+      "source": "/document_matter/agency_building.md",
+      "id_method": "0",
+      "content": "document_matter/agency_building"
+    },
+    "3": {
+      "id": "3",
+      "name": "Operational Security",
+      "description": "Also be aware that local groups may not be able to accurately gauge the safety of their communications with you. Sometimes they underestimate the likelihood of risk - at other times, they can wildly overestimate...",
+      "layout": "page.pug",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/document_matter/operational_security.md",
+      "categories": [
+        "document_matter/introduction"
+      ],
+      "collection": [],
+      "source": "/document_matter/operational_security.md",
+      "id_method": "0",
+      "content": "document_matter/operational_security"
+    },
+    "4": {
+      "id": "4",
+      "name": "Assessment Plan",
+      "description": "This component allows an auditor and host to come to an understanding of the level of access that an auditor will have,...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/assessment_plan/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/preparation"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/assessment-plan.md",
+      "id_method": "1",
+      "content": "activities/assessment-plan"
+    },
+    "5": {
+      "id": "5",
+      "name": "Confidentiality Agreement",
+      "description": "Negotiate an agreement with the organization that outlines how an auditor will protect the privacy of the organization...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/confidentiality_agreement/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "N/A",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/preparation"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/confidentiality-agreement.md",
+      "id_method": "1",
+      "content": "activities/confidentiality-agreement"
+    },
+    "6": {
+      "id": "6",
+      "name": "Incident Response and Emergency Contact",
+      "description": "Incident Response setups up a procedure for identifying what counts as an incident during an audit, as well as incident...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/incident_response/variant_webapp_hacking.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "Partial",
+      "skills_required": "Malware analysis, Research, Digital Forensics",
+      "time_required_minutes": 480,
+      "approach": "Technical, Interpersonal, Research",
+      "categories": [
+        "methods/preparation"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/incident-response.md",
+      "id_method": "1",
+      "content": "activities/incident-response"
+    },
+    "7": {
+      "id": "7",
+      "name": "Travel Kit Checklist",
+      "description": "Travel Kit Checklist",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/travel_kit/index.md",
+      "authors": "SAFETAG",
+      "org_size_under": "N/A",
+      "remote_options": "N/A",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "N/A",
+      "categories": [
+        "methods/preparation"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/travel-kit.md",
+      "id_method": "1",
+      "content": "activities/travel-kit"
+    },
+    "8": {
+      "id": "8",
+      "name": "Interviews",
+      "description": "The auditor conducts interviews with various staff members to gather information on the organizations risks and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/interviews/variant_interview_threatidentification.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Complete",
+      "skills_required": "Interviewing",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/context_research",
+        "methods/capacity_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/interviews.md",
+      "id_method": "2",
+      "content": "activities/interviews"
+    },
+    "9": {
+      "id": "9",
+      "name": "Regional Context Research",
+      "description": "This exercise focuses on research and re-confirmation of regional issues from general trends to specific legal...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/regional_context_research/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Research, Language",
+      "time_required_minutes": 240,
+      "approach": "Research",
+      "categories": [
+        "methods/context_research",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/regional-context-research.md",
+      "id_method": "2",
+      "content": "activities/regional-context-research"
+    },
+    "10": {
+      "id": "10",
+      "name": "Technical Context Research",
+      "description": "This exercise focuses on research into the technical capacity of potential threat actors, including both historical...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/technical_context_research/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Research, Malware analysis, Risk Assessment",
+      "time_required_minutes": 480,
+      "approach": "Research, Technical",
+      "categories": [
+        "methods/context_research"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/technical-context-research.md",
+      "id_method": "2",
+      "content": "activities/technical-context-research"
+    },
+    "11": {
+      "id": "11",
+      "name": "Interviews",
+      "description": "The auditor conducts interviews with various staff members to gather information on the organizations risks and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/interviews/variant_interview_threatidentification.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Complete",
+      "skills_required": "Interviewing",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/context_research",
+        "methods/capacity_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/interviews.md",
+      "id_method": "3",
+      "content": "activities/interviews"
+    },
+    "12": {
+      "id": "12",
+      "name": "Guiding Questions for High-Risk Organisations",
+      "description": "This additional interview activity is to identify if there are any indicators that the organization may have already...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/interviews_highrisk/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Complete",
+      "skills_required": "Interviewing, Malware Analysis",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/capacity_assessment",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/interviews-highrisk.md",
+      "id_method": "3",
+      "content": "activities/interviews-highrisk"
+    },
+    "13": {
+      "id": "13",
+      "name": "Capacity Assessment Checklist",
+      "description": "A monolithic, one-time interview with key staff is not always possible or advisable, but interacting with a variety of...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/capacity_assessment_cheatsheet/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Partial",
+      "skills_required": "N/A",
+      "time_required_minutes": 30,
+      "approach": "Research",
+      "categories": [
+        "methods/capacity_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/capacity-assessment-cheatsheet.md",
+      "id_method": "3",
+      "content": "activities/capacity-assessment-cheatsheet"
+    },
+    "14": {
+      "id": "14",
+      "name": "Manual Reconnaissance",
+      "description": "This exercise suggests some targeted online search tools and tricks to gather information leakages from organizations. ...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/manual_recon/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "Complete",
+      "skills_required": "OSINT Research",
+      "time_required_minutes": 240,
+      "approach": "Research, Technical",
+      "categories": [
+        "methods/reconnaissance"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/manual-recon.md",
+      "id_method": "4",
+      "content": "activities/manual-recon"
+    },
+    "15": {
+      "id": "15",
+      "name": "Automated Reconnaisance",
+      "description": "This component allows the auditor to quickly identify publicly available resources (such as websites, extranets, email...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/automated_recon/variant_recon-ng.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "OSINT Tools",
+      "time_required_minutes": 240,
+      "approach": "Technical",
+      "categories": [
+        "methods/reconnaissance"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/automated-recon.md",
+      "id_method": "4",
+      "content": "activities/automated-recon"
+    },
+    "16": {
+      "id": "16",
+      "name": "Website Footprinting",
+      "description": "Using online tools as a starting point in assessing the auditee web application is a good way to expand online...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/web_footprint/variant_cms_version.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Website scanning",
+      "time_required_minutes": 60,
+      "approach": "Technical, Research",
+      "categories": [
+        "methods/reconnaissance",
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/web-footprint.md",
+      "id_method": "4",
+      "content": "activities/web-footprint"
+    },
+    "17": {
+      "id": "17",
+      "name": "DNS Enumeration",
+      "description": "DNS Stands for Domain Name Service. In a nutshell, what it does is translate hosts/computer's name into it's IP...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/dns_enumeration/variant_zonetransfer.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "DNS, OSINT",
+      "time_required_minutes": 45,
+      "approach": "Technical, Research",
+      "categories": [
+        "methods/reconnaissance"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/dns-enumeration.md",
+      "id_method": "4",
+      "content": "activities/dns-enumeration"
+    },
+    "18": {
+      "id": "18",
+      "name": "Wireless Range Mapping",
+      "description": "This component allows the auditor to show the visibility of an organization's wireless network to determine how far...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/wireless_range_mapping/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 500,
+      "remote_options": "None",
+      "skills_required": "Wireless",
+      "time_required_minutes": 30,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/wireless-range-mapping.md",
+      "id_method": "5",
+      "content": "activities/wireless-range-mapping"
+    },
+    "19": {
+      "id": "19",
+      "name": "Monitor Open Wireless Traffic",
+      "description": "It can be valuable to to listen to broadcast wireless traffic at  the physical office location, even before knowing...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/monitor_open_wireless_traffic/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "None",
+      "skills_required": "Wireless, Traffic Analysis",
+      "time_required_minutes": 60,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/monitor-open-wireless-traffic.md",
+      "id_method": "5",
+      "content": "activities/monitor-open-wireless-traffic"
+    },
+    "20": {
+      "id": "20",
+      "name": "Network Access",
+      "description": "This activity helps auditors to test the strength of defenses the organizations' network has in place to protect their...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/network_access/variant_wps_pin_cracking.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "None",
+      "skills_required": "password cracking, wireless network monitoring",
+      "time_required_minutes": 240,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/network-access.md",
+      "id_method": "5",
+      "content": "activities/network-access"
+    },
+    "21": {
+      "id": "21",
+      "name": "Network Scanning",
+      "description": "Network scanning is a technique used to gather information about devices connected on a certain network. It involves...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/network_scanning/variant_nmap.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "with-support",
+      "skills_required": "Network Mapping",
+      "time_required_minutes": 120,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/organizational_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/network-scanning.md",
+      "id_method": "5",
+      "content": "activities/network-scanning"
+    },
+    "22": {
+      "id": "22",
+      "name": "Network Traffic Analysis",
+      "description": "Any content that is sent out over the network without encryption is easy to intercept; this includes email, web...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/traffic_analysis/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "with-support",
+      "skills_required": "Traffic Analysis, Malware Analysis",
+      "time_required_minutes": 240,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/traffic-analysis.md",
+      "id_method": "5",
+      "content": "activities/traffic-analysis"
+    },
+    "23": {
+      "id": "23",
+      "name": "Remote Network and User Device Assessment",
+      "description": "This component allows the auditor to work remotely to identify the devices on a host's network, the services that are...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/remote_network_device_assessment/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Networking",
+      "time_required_minutes": 120,
+      "approach": "Techincal",
+      "categories": [
+        "methods/network_mapping"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/remote-network-device-assessment.md",
+      "id_method": "5",
+      "content": "activities/remote-network-device-assessment"
+    },
+    "24": {
+      "id": "24",
+      "name": "Router Based Attacks",
+      "description": "Many wireless routers still use the default password listed in [“Router Default Password...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/router_attacks/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "with-support",
+      "skills_required": "Networking",
+      "time_required_minutes": 15,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/router-attacks.md",
+      "id_method": "5",
+      "content": "activities/router-attacks"
+    },
+    "25": {
+      "id": "25",
+      "name": "Device and Behaviour Assessment",
+      "description": "The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/device_checklist/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "System Administration",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/device-checklist.md",
+      "id_method": "6",
+      "content": "activities/device-checklist"
+    },
+    "26": {
+      "id": "26",
+      "name": "Password Security Survey",
+      "description": "Weak and shared passwords are prevalent - even after hundreds of well-publicized global password breaches, password...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/password_security/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Complete",
+      "skills_required": "Surveys",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/password-security.md",
+      "id_method": "6",
+      "content": "activities/password-security"
+    },
+    "27": {
+      "id": "27",
+      "name": "A Day in the Life",
+      "description": "The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/day_in_the_life/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Yes",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/day-in-the-life.md",
+      "id_method": "6",
+      "content": "activities/day-in-the-life"
+    },
+    "28": {
+      "id": "28",
+      "name": "A Night in the Life",
+      "description": "The auditor interviews the staff about their practices, personal devices, software and other security capabilities that...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/night_in_the_life/recommendations.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Yes",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/night-in-the-life.md",
+      "id_method": "6",
+      "content": "activities/night-in-the-life"
+    },
+    "29": {
+      "id": "29",
+      "name": "Network Scanning",
+      "description": "Network scanning is a technique used to gather information about devices connected on a certain network. It involves...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/network_scanning/variant_nmap.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "with-support",
+      "skills_required": "Network Mapping",
+      "time_required_minutes": 120,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/organizational_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/network-scanning.md",
+      "id_method": "6",
+      "content": "activities/network-scanning"
+    },
+    "30": {
+      "id": "30",
+      "name": "Guided Tour",
+      "description": "During this component an auditor tours the audit location(s) and flags potential risks related to physical access at...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/guided_tour/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Partial",
+      "skills_required": "N/A",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/guided-tour.md",
+      "id_method": "6",
+      "content": "activities/guided-tour"
+    },
+    "31": {
+      "id": "31",
+      "name": "Device and Behaviour Assessment",
+      "description": "The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/device_checklist/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "System Administration",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/device-checklist.md",
+      "id_method": "7",
+      "content": "activities/device-checklist"
+    },
+    "32": {
+      "id": "32",
+      "name": "Mobile Device Assessment",
+      "description": "The auditor checks for the type of mobile devices in the organizationsFollows a series of steps depending on the...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/mobile_device_survey/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Partial",
+      "skills_required": "Interviewing, Surveys",
+      "time_required_minutes": 45,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/mobile-device-survey.md",
+      "id_method": "7",
+      "content": "activities/mobile-device-survey"
+    },
+    "33": {
+      "id": "33",
+      "name": "A Day in the Life",
+      "description": "The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/day_in_the_life/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Yes",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/day-in-the-life.md",
+      "id_method": "7",
+      "content": "activities/day-in-the-life"
+    },
+    "34": {
+      "id": "34",
+      "name": "A Night in the Life",
+      "description": "The auditor interviews the staff about their practices, personal devices, software and other security capabilities that...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/night_in_the_life/recommendations.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Yes",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/night-in-the-life.md",
+      "id_method": "7",
+      "content": "activities/night-in-the-life"
+    },
+    "35": {
+      "id": "35",
+      "name": "Firewire Access to Encrypted/Locked computers",
+      "description": "Firewire ports and expansion slots can be abused to obtain data that are thought to be encryptedAny attacker who...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/firewire/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "None",
+      "skills_required": "CLI",
+      "time_required_minutes": 30,
+      "approach": "Technical",
+      "categories": [
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/firewire.md",
+      "id_method": "7",
+      "content": "activities/firewire"
+    },
+    "36": {
+      "id": "36",
+      "name": "Password Security Survey",
+      "description": "Weak and shared passwords are prevalent - even after hundreds of well-publicized global password breaches, password...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/password_security/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Complete",
+      "skills_required": "Surveys",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/password-security.md",
+      "id_method": "7",
+      "content": "activities/password-security"
+    },
+    "37": {
+      "id": "37",
+      "name": "Password Strength",
+      "description": "This exercise supports the auditor in building an effective dictionary that is customized to an organization.This...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/password_strength/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "Partial",
+      "skills_required": "Password auditing",
+      "time_required_minutes": 120,
+      "approach": "Technical",
+      "categories": [
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/password-strength.md",
+      "id_method": "7",
+      "content": "activities/password-strength"
+    },
+    "38": {
+      "id": "38",
+      "name": "Monitor Open Wireless Traffic",
+      "description": "It can be valuable to to listen to broadcast wireless traffic at  the physical office location, even before knowing...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/monitor_open_wireless_traffic/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "None",
+      "skills_required": "Wireless, Traffic Analysis",
+      "time_required_minutes": 60,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/monitor-open-wireless-traffic.md",
+      "id_method": "7",
+      "content": "activities/monitor-open-wireless-traffic"
+    },
+    "39": {
+      "id": "39",
+      "name": "Guided Tour",
+      "description": "During this component an auditor tours the audit location(s) and flags potential risks related to physical access at...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/guided_tour/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Partial",
+      "skills_required": "N/A",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/guided-tour.md",
+      "id_method": "7",
+      "content": "activities/guided-tour"
+    },
+    "40": {
+      "id": "40",
+      "name": "Check Browser and Plugin Vulnerabilities",
+      "description": "Though modern browsers are better at self-updating, and the prevalence of powerful plugins like flash and java are...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/check_user_browser_vulns/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "N/A",
+      "time_required_minutes": 30,
+      "approach": "Technical",
+      "categories": [
+        "methods/user_device_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/check-user-browser-vulns.md",
+      "id_method": "7",
+      "content": "activities/check-user-browser-vulns"
+    },
+    "41": {
+      "id": "41",
+      "name": "Vulnerability Scanning",
+      "description": "While much of SAFETAG focuses on digital security challenges within and around the office, remote attacks on the...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/vulnerability_scanning/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "with-support",
+      "skills_required": "Vulnerability Scanning, Malware analysis, Risk Assessment",
+      "time_required_minutes": 240,
+      "approach": "Technical",
+      "categories": [
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/vulnerability-scanning.md",
+      "id_method": "8",
+      "content": "activities/vulnerability-scanning"
+    },
+    "42": {
+      "id": "42",
+      "name": "Vulnerability Research",
+      "description": "Vulnerability Research",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/vulnerability_research/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Research, Malware analysis, Risk Assessment, Vulnerability Scanning",
+      "time_required_minutes": 240,
+      "approach": "Research, Technical",
+      "categories": [
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/vulnerability-research.md",
+      "id_method": "8",
+      "content": "activities/vulnerability-research"
+    },
+    "43": {
+      "id": "43",
+      "name": "Website Footprinting",
+      "description": "Using online tools as a starting point in assessing the auditee web application is a good way to expand online...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/web_footprint/variant_cms_version.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Website scanning",
+      "time_required_minutes": 60,
+      "approach": "Technical, Research",
+      "categories": [
+        "methods/reconnaissance",
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/web-footprint.md",
+      "id_method": "8",
+      "content": "activities/web-footprint"
+    },
+    "44": {
+      "id": "44",
+      "name": "Web Vulnerability Assessment",
+      "description": "Organizational websites are often a central part of their work, but resource constraints can leave them vulnerable to a...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/web_vulnerability_assessment/variant_owasp-zap.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Website scanning, Vulnerability scanning",
+      "time_required_minutes": 120,
+      "approach": "Technical",
+      "categories": [
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/web-vulnerability-assessment.md",
+      "id_method": "8",
+      "content": "activities/web-vulnerability-assessment"
+    },
+    "45": {
+      "id": "45",
+      "name": "Check Config Files",
+      "description": "Examine configuration files for vulnerabilities  using hardening, or common mistake guides found...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/check_config_files/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "System Administration",
+      "time_required_minutes": 60,
+      "approach": "unknown",
+      "categories": [
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/check-config-files.md",
+      "id_method": "8",
+      "content": "activities/check-config-files"
+    },
+    "46": {
+      "id": "46",
+      "name": "Router Based Attacks",
+      "description": "Many wireless routers still use the default password listed in [“Router Default Password...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/router_attacks/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "with-support",
+      "skills_required": "Networking",
+      "time_required_minutes": 15,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/vulnerability_scanning"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/router-attacks.md",
+      "id_method": "8",
+      "content": "activities/router-attacks"
+    },
+    "47": {
+      "id": "47",
+      "name": "Sensitive Data",
+      "description": "Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/sensitive_data/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": "unknown",
+      "remote_options": "unknown",
+      "skills_required": "unknown",
+      "time_required_minutes": "unknown",
+      "approach": "unknown",
+      "categories": [
+        "methods/data_assessment",
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/sensitive-data.md",
+      "id_method": "9",
+      "content": "activities/sensitive-data"
+    },
+    "48": {
+      "id": "48",
+      "name": "Risks of Data Lost and Found",
+      "description": "Have staff rank the impact if different data within the organization was lost, and the impact if various adversaries...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/data_lost_and_found/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": "unknown",
+      "remote_options": "unknown",
+      "skills_required": "unknown",
+      "time_required_minutes": "unknown",
+      "approach": "unknown",
+      "categories": [
+        "methods/data_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/data-lost-and-found.md",
+      "id_method": "9",
+      "content": "activities/data-lost-and-found"
+    },
+    "49": {
+      "id": "49",
+      "name": "Private Data",
+      "description": "Guide staff through an activity to have them list private data within the organization (e.g. Using the personal...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/private_data/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Risk Assessment",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/data_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/private-data.md",
+      "id_method": "9",
+      "content": "activities/private-data"
+    },
+    "50": {
+      "id": "50",
+      "name": "Guided Tour",
+      "description": "During this component an auditor tours the audit location(s) and flags potential risks related to physical access at...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/guided_tour/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Partial",
+      "skills_required": "N/A",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/guided-tour.md",
+      "id_method": "10",
+      "content": "activities/guided-tour"
+    },
+    "51": {
+      "id": "51",
+      "name": "Operational Security Survey",
+      "description": "This activity helps the auditor assess the organization's current operational security policies and practices through...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/physical_security_survey/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Partial",
+      "skills_required": "Surveys, Interviewing",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal, Research",
+      "categories": [
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/physical-security-survey.md",
+      "id_method": "10",
+      "content": "activities/physical-security-survey"
+    },
+    "52": {
+      "id": "52",
+      "name": "Office Mapping",
+      "description": "This activity seeks to identify potential physical vulnerabilities to an organization's information security practices...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/office_mapping/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "with-support",
+      "skills_required": "N/A",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/office-mapping.md",
+      "id_method": "10",
+      "content": "activities/office-mapping"
+    },
+    "53": {
+      "id": "53",
+      "name": "Scavenger Hunt",
+      "description": "This activity assists in identifying potential physical security concerns at an organization, particularly when an...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/scavenger_hunt/summary.md",
+      "authors": "AlWalid",
+      "org_size_under": 50,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Psycho-social care",
+      "time_required_minutes": 90,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/scavenger-hunt.md",
+      "id_method": "10",
+      "content": "activities/scavenger-hunt"
+    },
+    "54": {
+      "id": "54",
+      "name": "Monitor Open Wireless Traffic",
+      "description": "It can be valuable to to listen to broadcast wireless traffic at  the physical office location, even before knowing...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/monitor_open_wireless_traffic/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "None",
+      "skills_required": "Wireless, Traffic Analysis",
+      "time_required_minutes": 60,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/monitor-open-wireless-traffic.md",
+      "id_method": "10",
+      "content": "activities/monitor-open-wireless-traffic"
+    },
+    "55": {
+      "id": "55",
+      "name": "Wireless Range Mapping",
+      "description": "This component allows the auditor to show the visibility of an organization's wireless network to determine how far...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/wireless_range_mapping/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 500,
+      "remote_options": "None",
+      "skills_required": "Wireless",
+      "time_required_minutes": 30,
+      "approach": "Technical",
+      "categories": [
+        "methods/network_mapping",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/wireless-range-mapping.md",
+      "id_method": "10",
+      "content": "activities/wireless-range-mapping"
+    },
+    "56": {
+      "id": "56",
+      "name": "A Day in the Life",
+      "description": "The auditor checks staff devices for updated systems and software, anti-virus and other security capabilities, and...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/day_in_the_life/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Yes",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/day-in-the-life.md",
+      "id_method": "10",
+      "content": "activities/day-in-the-life"
+    },
+    "57": {
+      "id": "57",
+      "name": "A Night in the Life",
+      "description": "The auditor interviews the staff about their practices, personal devices, software and other security capabilities that...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/night_in_the_life/recommendations.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "Yes",
+      "skills_required": "N/A",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal",
+      "categories": [
+        "methods/organizational_device_assessment",
+        "methods/user_device_assessment",
+        "methods/operational_security"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/night-in-the-life.md",
+      "id_method": "10",
+      "content": "activities/night-in-the-life"
+    },
+    "58": {
+      "id": "58",
+      "name": "Process Mapping",
+      "description": "This activity helps to identify the processes that allow the organization to function (publishing articles, payments,...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/process_mapping_activity/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Psycho-social care, Risk Assessment",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/risk_modeling"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/process-mapping-activity.md",
+      "id_method": "11",
+      "content": "activities/process-mapping-activity"
+    },
+    "59": {
+      "id": "59",
+      "name": "Risk Modeling Using the Pre-Mortum Strategy",
+      "description": "The pre-mortum strategy was devised to take participants out of a perspective of defending their plans and strategies...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/pre_mortum_risk_assessment_activity/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Psycho-social care, Risk Assessment",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/pre-mortum-risk-assessment-activity.md",
+      "id_method": "11",
+      "content": "activities/pre-mortum-risk-assessment-activity"
+    },
+    "60": {
+      "id": "60",
+      "name": "Creating a Risk Matrix",
+      "description": "Creating a Risk Matrix",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/risk_matrix/materials_needed.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "with-support",
+      "skills_required": "Risk Assessment",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/risk-matrix.md",
+      "id_method": "11",
+      "content": "activities/risk-matrix"
+    },
+    "61": {
+      "id": "61",
+      "name": "Sensitive Data",
+      "description": "Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/sensitive_data/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": "unknown",
+      "remote_options": "unknown",
+      "skills_required": "unknown",
+      "time_required_minutes": "unknown",
+      "approach": "unknown",
+      "categories": [
+        "methods/data_assessment",
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/sensitive-data.md",
+      "id_method": "11",
+      "content": "activities/sensitive-data"
+    },
+    "62": {
+      "id": "62",
+      "name": "Self Doxing",
+      "description": "Doxing (also doxxing, or d0xing, a word derived from documents, or docs) consists in tracing and gathering...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/self_doxing/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Risk Assessment",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal, Technical",
+      "categories": [
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/self-doxing.md",
+      "id_method": "11",
+      "content": "activities/self-doxing"
+    },
+    "63": {
+      "id": "63",
+      "name": "Suspicious Activity Analysis",
+      "description": "Malware is a common tactic to target organizations. Malware like a Remote Access Trojan (or RAT) can provide an...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/suspicious_activity_analysis/variant_urls.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "None",
+      "skills_required": "Malware Analysis",
+      "time_required_minutes": 120,
+      "approach": "Technical",
+      "categories": [
+        "methods/advanced_threat"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/suspicious-activity-analysis.md",
+      "id_method": "12",
+      "content": "activities/suspicious-activity-analysis"
+    },
+    "64": {
+      "id": "64",
+      "name": "Digital Forensics and Evidence Capture",
+      "description": "This component briefs the tools and procedures required to acquire the image (live or dead, depending on the situation)...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/evidence_capture/variant_offline_capture.md",
+      "authors": "Anonymous",
+      "org_size_under": 10000,
+      "remote_options": "None",
+      "skills_required": "Digital Forensics",
+      "time_required_minutes": 60,
+      "approach": "Technical",
+      "categories": [
+        "methods/advanced_threat"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/evidence-capture.md",
+      "id_method": "12",
+      "content": "activities/evidence-capture"
+    },
+    "65": {
+      "id": "65",
+      "name": "Forensic Analysis",
+      "description": "This component describes how to perform an analysis on captured evidence (e.g. hard drive image or memory dump) without...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/forensic_analysis/summary.md",
+      "authors": "Anonymous",
+      "org_size_under": 100,
+      "remote_options": "None",
+      "skills_required": "Digital Forensics",
+      "time_required_minutes": 480,
+      "approach": "Technical",
+      "categories": [
+        "methods/advanced_threat"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/forensic-analysis.md",
+      "id_method": "12",
+      "content": "activities/forensic-analysis"
+    },
+    "66": {
+      "id": "66",
+      "name": "Risk Modeling Using the Pre-Mortum Strategy",
+      "description": "The pre-mortum strategy was devised to take participants out of a perspective of defending their plans and strategies...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/pre_mortum_risk_assessment_activity/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Psycho-social care, Risk Assessment",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/pre-mortum-risk-assessment-activity.md",
+      "id_method": "13",
+      "content": "activities/pre-mortum-risk-assessment-activity"
+    },
+    "67": {
+      "id": "67",
+      "name": "Guiding Questions for High-Risk Organisations",
+      "description": "This additional interview activity is to identify if there are any indicators that the organization may have already...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/interviews_highrisk/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "Complete",
+      "skills_required": "Interviewing, Malware Analysis",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/capacity_assessment",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/interviews-highrisk.md",
+      "id_method": "13",
+      "content": "activities/interviews-highrisk"
+    },
+    "68": {
+      "id": "68",
+      "name": "Sensitive Data",
+      "description": "Data and meta-data about an organization and its staff is incredibly difficult to keep track of over time, as people or...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/sensitive_data/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": "unknown",
+      "remote_options": "unknown",
+      "skills_required": "unknown",
+      "time_required_minutes": "unknown",
+      "approach": "unknown",
+      "categories": [
+        "methods/data_assessment",
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/sensitive-data.md",
+      "id_method": "13",
+      "content": "activities/sensitive-data"
+    },
+    "69": {
+      "id": "69",
+      "name": "Threat Identification",
+      "description": "These activities build off of a process or data mapping exercise to connect actual processes or assets and data of the...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/threat_identification/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Psycho-social care, Risk Assessment",
+      "time_required_minutes": 240,
+      "approach": "Research, Interpersonal, Technical",
+      "categories": [
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/threat-identification.md",
+      "id_method": "13",
+      "content": "activities/threat-identification"
+    },
+    "70": {
+      "id": "70",
+      "name": "Creating a Risk Matrix",
+      "description": "Creating a Risk Matrix",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/risk_matrix/materials_needed.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "with-support",
+      "skills_required": "Risk Assessment",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/risk-matrix.md",
+      "id_method": "13",
+      "content": "activities/risk-matrix"
+    },
+    "71": {
+      "id": "71",
+      "name": "Threat Interaction",
+      "description": "This helps the auditor enumerate threats that the organization is concerned about and the internal priorities of them. ...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/threat_interaction/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 50,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Psycho-social care",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/threat-interaction.md",
+      "id_method": "13",
+      "content": "activities/threat-interaction"
+    },
+    "72": {
+      "id": "72",
+      "name": "Regional Context Research",
+      "description": "This exercise focuses on research and re-confirmation of regional issues from general trends to specific legal...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/regional_context_research/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Research, Language",
+      "time_required_minutes": 240,
+      "approach": "Research",
+      "categories": [
+        "methods/context_research",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/regional-context-research.md",
+      "id_method": "13",
+      "content": "activities/regional-context-research"
+    },
+    "73": {
+      "id": "73",
+      "name": "Self Doxing",
+      "description": "Doxing (also doxxing, or d0xing, a word derived from documents, or docs) consists in tracing and gathering...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/self_doxing/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 25,
+      "remote_options": "with-support",
+      "skills_required": "Group Facilitation, Risk Assessment",
+      "time_required_minutes": 120,
+      "approach": "Research, Interpersonal, Technical",
+      "categories": [
+        "methods/risk_modeling",
+        "methods/threat_assessment"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/self-doxing.md",
+      "id_method": "13",
+      "content": "activities/self-doxing"
+    },
+    "74": {
+      "id": "74",
+      "name": "Follow-up Meeting",
+      "description": "Schedule and have a follow up call to discuss the audit report.  This provides a valuable touch-point for the...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/follow_up_meeting/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "Complete",
+      "skills_required": "Report writing",
+      "time_required_minutes": 60,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/follow_up"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/follow-up-meeting.md",
+      "id_method": "16",
+      "content": "activities/follow-up-meeting"
+    },
+    "75": {
+      "id": "75",
+      "name": "Making Introductions",
+      "description": "Make introduction between host and known resources as...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/making_introductions/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "Complete",
+      "skills_required": "N/A",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/follow_up"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/making-introductions.md",
+      "id_method": "16",
+      "content": "activities/making-introductions"
+    },
+    "76": {
+      "id": "76",
+      "name": "Long-Term Follow-up",
+      "description": "Follow up with host after a few months to check on progress, get long-term feedback and connect with any new...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/long_term_follow_up/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 100,
+      "remote_options": "Complete",
+      "skills_required": "Report writing",
+      "time_required_minutes": 120,
+      "approach": "Interpersonal",
+      "categories": [
+        "methods/follow_up"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/long-term-follow-up.md",
+      "id_method": "16",
+      "content": "activities/long-term-follow-up"
+    },
+    "77": {
+      "id": "77",
+      "name": "Staff Feedback Survey",
+      "description": "Providing a space for anonymous, guided feedback is valuable to gather information about how your audit work and the...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/staff_feedback_survey/survey.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Surveys",
+      "time_required_minutes": 30,
+      "approach": "Interpersonal, Research",
+      "categories": [
+        "methods/follow_up"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/staff-feedback-survey.md",
+      "id_method": "16",
+      "content": "activities/staff-feedback-survey"
+    },
+    "78": {
+      "id": "78",
+      "name": "Resource Identification",
+      "description": "In this component the auditor documents resources that the host may be able to leverage to address the technical,...",
+      "origin": "https://github.com/SAFETAG/SAFETAG",
+      "origin_path": "master/en/exercises/identify_useful_resources/summary.md",
+      "authors": "SAFETAG",
+      "org_size_under": 1000,
+      "remote_options": "Complete",
+      "skills_required": "Research, Fundraising, Report writing",
+      "time_required_minutes": 60,
+      "approach": "Research",
+      "categories": [
+        "methods/recommendation_development"
+      ],
+      "collection": [
+        "activities"
+      ],
+      "content_type": "activity",
+      "lunr": true,
+      "source": "/activities/identify-useful-resources.md",
+      "id_method": "17",
+      "content": "activities/identify-useful-resources"
+    }
+  },
+  "content": {}
+}

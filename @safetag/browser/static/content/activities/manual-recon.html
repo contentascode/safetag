@@ -1,0 +1,55 @@
+<h1 id="manual-reconnaissance">Manual Reconnaissance</h1>
+<h2 id="summary">Summary</h2>
+<p>This exercise suggests some targeted online search tools and tricks to gather information leakages from organizations. While many advocacy, activism, and media/journalism focused organizations are very public as part of their operations, the searches suggested here aim to explore data that could be used to better attack or socially engineer an organization.</p>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Use VPNs or Tor to conduct your searching. Tor may be blocked by some services.</li>
+<li>Some searches may reveal personal information. Be empathetic and responsible with this, even though it is &quot;public&quot; information.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p>These custom and more manual approaches work excellently in combination with automated tools such as recon-ng or the commercial Maltego. Working with both these tricks and the automated tools, feeding information learned from one back to the other, is a powerful way to unearth large amounts of information about an organization.</p>
+<p>Much of the tools and further guidance is well covered in the references for the Reconnaissance method, a small selection of starting points is mapped out below.</p>
+<p>Take care, however, to not waste time on this; using image information tools on every photo on an organization's website, or researching every linked social media account may not provide further valuable information - step back and judge the value of digging deeper - are you finding adversaries? Are you finding information that the organization may not want online? Are there other methods which might be more appropriate to apply?</p>
+<h5 id="search-engines">Search Engines</h5>
+<p>Google dorking tricks:</p>
+<ul>
+<li>limit to the target webiste using site: and look for potentially accidentally uploaded file types (e.g. xlsx, you can reference this <a href="https://support.google.com/webmasters/answer/35287?hl=en">full list of searchable filetypes</a>)</li>
+<li>inurl:</li>
+<li>search for link: to discover partners and projects (add &quot;project of&quot; and similar), removing known, un-interesting and irrelevant sites with -site:</li>
+<li>Browse <a href="https://www.exploit-db.com/google-hacking-database/">Exploit-db</a> for interesting and advanced combinations to consider, e.g. inurl:/wp-en/wpbackitup_backups</li>
+</ul>
+<h5 id="social-media-account-discovery">Social Media / Account Discovery</h5>
+<ul>
+<li>Use tools such as <a href="http://knowem.com/checksocialnames.php">KnowEm</a>, <a href="https://namechk.com/">namechk</a>, or <a href="http://www.namechecklist.com/">namechecklist</a> to find similar or organizationally-linked usernames across other social media accounts.</li>
+</ul>
+<h5 id="additional-tools">Additional Tools</h5>
+<ul>
+<li>GlassDoor can provide insight (mostly for larger organizations) on whether there might be disgruntled former (or current) employees.</li>
+</ul>
+<h5 id="pastebin-searching">Pastebin Searching</h5>
+<ul>
+<li>Search pastebin for keywords about the organization (usually their website address) -- this <a href="https://cse.google.com/cse/home?cx=001580308195336108602:mhdmrvbspnm">custom google search</a> by <a href="http://inteltechniques.com/OSINT/pastebins.html">IntelTechniques</a> searches across over 100 pastebin-like sites, including github, at once.</li>
+</ul>
+<h5 id="working-with-images">Working with Images</h5>
+<ul>
+<li>Use tools like <a href="https://tineye.com/">tineye</a> and <a href="https://support.google.com/websearch/answer/1325808?hl=en">Google Reverse Image search</a> to find images (especially user icons from twitter, etc.) on other sites, and test interesting ones for additional image in the EXIF data using online tools like <a href="http://regex.info/exif.cgi">Exif Viewer</a> or commandline tools like <code>exiftool</code>.</li>
+</ul>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

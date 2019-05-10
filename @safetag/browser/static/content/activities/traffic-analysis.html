@@ -1,0 +1,65 @@
+<h1 id="network-traffic-analysis">Network Traffic Analysis</h1>
+<h2 id="summary">Summary</h2>
+<p>Any content that is sent out over the network without encryption is easy to intercept; this includes email, web passwords, and chat messages.</p>
+<p>This attacker could be someone, such as a patron of the Internet cafe where a staff member is working, who just happens to be using the same local network to connect to the Internet. Or, she could work for an organization with privileged access to the relevant network, such as the Internet Service Provider (ISP) of either the sender or receiver and other network-backbone connections made along the way.</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>Wifi device and drivers supporting &quot;promiscuous mode&quot; (see <a href="http://www.aircrack-ng.org/doku.php?id=compatible_cards&amp;DokuWiki=a36042531edb54f9b95a76ff61d77d14" class="uri">http://www.aircrack-ng.org/doku.php?id=compatible_cards&amp;DokuWiki=a36042531edb54f9b95a76ff61d77d14</a>)</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>Treat captured network traffic with the utmost security and empathetic<br />
+responsibility. They may contain very personal data, passwords, and more. These<br />
+should not be shared except in specific, intentional samples with anyone, including<br />
+the organization itself.</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<h5 id="network-traffic-interception">Network Traffic Interception</h5>
+<p><strong>Step 1:</strong> The attacker tricks the victim into routing all of their traffic through the attacker’s machine. This involves making a simple request to the victim’s IP address, which is not difficult to do. Computers are rarely configured to ignore such requests.</p>
+<pre><code>$ sudo sh -c &#39;echo 1 &gt; /proc/sys/net/ipv4/ip_forward&#39;
+
+$ sudo arpspoof -i wlan0 -t 192.168.1.99 192.168.1.1</code></pre>
+<p>Sample Output:</p>
+<pre><code>00:11:22:33:44:55 aa:bb:cc:dd:ee:ff 0806 42: arp reply 192.168.1.1 is-at 00:11:22:33:44:55
+00:11:22:33:44:55 aa:bb:cc:dd:ee:ff 0806 42: arp reply 192.168.1.1 is-at 00:11:22:33:44:55
+00:11:22:33:44:55 aa:bb:cc:dd:ee:ff 0806 42: arp reply 192.168.1.1 is-at 00:11:22:33:44:55
+00:11:22:33:44:55 aa:bb:cc:dd:ee:ff 0806 42: arp reply 192.168.1.1 is-at 00:11:22:33:44:55
+...
+00:11:22:33:44:55 aa:bb:cc:dd:ee:ff 0806 42: arp reply 192.168.1.1 is-at 00:11:22:33:44:55</code></pre>
+<p>In the example above, only a single victim (192.168.1.99) is being targeted, but the attack works fine against multiple victims, or even against the entire network. In other words, the attacker does not need to know which IP address (on the office or Internet cafe LAN, for example) belongs to the target. Furthermore, the victim is extremely unlikely to notice any sign that this phase of the attack is taking place.</p>
+<p>EtterCap provides a powerful frontend to managing this process with multiple potential targets. In EtterCap:</p>
+<ul>
+<li>Under the &quot;Sniff&quot; menu, select &quot;Unified sniffing&quot; (for most cases where you are using one interface to both intercept and forward traffic), and select the relevant interface (wlan0)</li>
+<li>Under the Hosts menu, select the systems on the network you will target, or leave blank to target all systems</li>
+<li>Under Mitm, select &quot;arp spoofing&quot; for this example</li>
+<li>Select &quot;Start&quot; under the Sniffing menu</li>
+</ul>
+<!-- Ettercap Screenshot -->
+<p><strong>Step 2:</strong> At this point, if the attacker is looking for unencrypted traffic, all the attacker needs to do is launch a packet-sniffer, such as Wireshark, and scan through the intercepted traffic for specific vulnerable information, such as email or website logins, as well as traffic revealing shadow infrastructure usage, such as Dropbox.</p>
+<p>Wireshark can also be used to identify malicious traffic.</p>
+<p>If you rarely use Wireshark, the output you will see will be a long list of packets, protocols and connections that might be hard to classify. To look into suspicious processes in a clearer way, you can use the &quot;Protocol Hierarchy&quot; option in the Statistics menu A good video to learn how to use this option for this purpose can be found <a href="https://www.youtube.com/watch?v=OwQmwbD1uIs">here</a>.</p>
+<ul>
+<li>If you want to practice with captures of malicious traffic, you can find them in the <a href="https://wiki.wireshark.org/SampleCaptures">Wireshark wiki</a>.</li>
+</ul>
+<!-- Wireshark screenshot -->
+<h2 id="recommendation">Recommendation</h2>
+<p>Only use services with <a href="https://securityinabox.org/en/guide/secure-communication">&quot;SSL&quot; encryption</a> (&quot;HTTPS&quot;), and consider adding <a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a> to browsers. This does not itself guarantee protection from all attacks, but it is a good first-step in protecting information (such as passwords or email) in transit from your computer to the service provider.</p>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

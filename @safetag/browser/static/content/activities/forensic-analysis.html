@@ -1,0 +1,74 @@
+<h1 id="forensic-analysis">Forensic Analysis</h1>
+<h2 id="summary">Summary</h2>
+<p>This component describes how to perform an analysis on captured evidence (e.g. hard drive image or memory dump) without altering the evidence. Any alteration, or even an environment or situation that creates the possibility of alteration, could lead to rejection of the evidence in a court of law or to malware analysis failures.</p>
+<h2 id="materials-needed">Materials Needed</h2>
+<ul>
+<li>Existing skillset and experience analyzing digital forensic evidence or trusted contacts who can help</li>
+<li>External storage devices to store backup copies</li>
+<li>Notepad or way to log your work</li>
+<li>Forensic analysis software (e.g. Sleuth Kit, Volatility)</li>
+<li>Dedicated system or setup for analysis</li>
+</ul>
+<h2 id="operational-security">Operational Security</h2>
+<ul>
+<li>If you have not analyzed malware before, do not start with real, live, and potentially targeted malware. See the References section from the Advanced Threat method for opportunities to build your skills without putting the organization or yourself at additional risk.</li>
+<li>Any analysis must be done with extreme caution (using a dedicated system, carefully managed VM, with very limited/monitored if any network access)</li>
+<li>Continue to follow the Chain of Custody procedures described in the Evidence Capture activity</li>
+<li>Follow the procedures for logging and hashing described in the walkthrough</li>
+</ul>
+<h2 id="walkthrough">Walkthrough</h2>
+<p><em>In most cases, reach out for help, there are multiple organizations which coordinate and can support malware analysis targeting NGOs. The <a href="https://rarenet.github.io/DFAK/en/SecureCommunication/">Digital First Aid Kit</a> has a list of organizations and in most cases secure contact details to seek support in doing advanced analysis. The <a href="http://www.rarenet.org/">Rapid Response Network</a>, a project of <a href="https://civicert.org/">CiviCERT</a> is a consortia of these organizations who may be able to help. <a href="https://citizenlab.ca/">Citizen Lab</a> is also well known for their analysis and research.</em></p>
+<p>There are some procedures that must be followed to ensure the evidence is properly handled while the forensic analysis is taking place. These include:</p>
+<ul>
+<li><strong>Keep a log of everything you do to analyze the data.</strong>
+<ul>
+<li>What you connected it to, and how</li>
+<li>Each and every command you ran against the data image as you perform your investigation</li>
+<li>This log must identify who is performing the analysis</li>
+<li>Date and time stamps for each action performed</li>
+</ul></li>
+<li><p><strong>Only work on copies of the data, not the source data.</strong></p></li>
+<li><p><strong>Ideally make multiple copies</strong> from the initial copy, as you may need to work on fresh copies if your analysis accidentally modifies the copy you are working on.</p></li>
+<li><p><strong>Immediately on receipt of the source data, make a cryptographic hash of that image, and store it in a safe place.</strong> This is your <em>only</em> guarantee that you have not tampered with the evidence you are working on!</p></li>
+<li><p><strong>After making a copy of the data, immediately create a cryptographic hash of that image</strong>, and check it against your master hash to ensure they match.</p></li>
+<li><p><strong>As you work on your investigation on a copy of the data, periodically check that data image with the cryptographic hash</strong>, to ensure you have not inadvertently modified the data by performing your investigation. If the hash does not match, then:</p>
+<ul>
+<li>Record the fact that the hash no longer matches in your activity log.</li>
+<li>Look in your log at all the steps you have taken between when you last checked the hash and now. One or more of the steps you have taken has modified the data of the copy, so you need to work out which step caused this, and how to perform a copy in the investigative step without modifying the data.</li>
+<li>Abandon the now modified copy of the data. This is tainted, so clearly mark it as such and return it to secure storage.</li>
+<li>Use a fresh copy of the data, again checking the hash to ensure it is clean before proceeding with the investigation.</li>
+<li>If necessary, make extra copies of the data from the original source image you created (making sure to never perform investigative steps on that source image).</li>
+</ul></li>
+</ul>
+<p>In order to facilitate the data analysis, we recommend to get the output data from the image acquisition in raw/dd format, which is accepted as input file in several forensic analysis tools.</p>
+<p>To analyze the acquired data, you can use the following tools:</p>
+<ul>
+<li><p><a href="http://www.sleuthkit.org/index.php">Sleuth Kit</a> is a kit of useful open source digital forensic tools to analyze the acquired data. Available tools in this kit include command line tools and a C library that allows you to analyze disk images and recover files from them, and a GUI-based program (Autopsy) that allows you to efficiently analyze hard drives and smartphones. Both tools can be found in the DEFT distro (The Sleuthkit 4.1.3), along with another useful tool kit (Digital Forensics Framework 1.3).</p></li>
+<li><p><a href="http://www.volatilityfoundation.org/releases">Volatility</a> is an open source framework used for volatile memory forensics or RAM forensics for images taken in Linux, MacOS and Windows. More info and tutorials can be found <a href="https://github.com/volatilityfoundation/volatility/wiki">here</a>.</p></li>
+</ul>
+<h2 id="recommendation">Recommendation</h2>
+<p>If any indicators of compromise are found, using the Suspicious Activity Analysis approach to do very initial research/analysis and triage (are these known malware or adware IoCs, etc.), and adjusting your reporting and operational security procedures with the organization as appropriate.</p>
+<h2 id="outputs">Outputs</h2>
+<ul>
+<li>Potential identification of suspicious processes / files</li>
+<li>Potential suspicious network connection attempts</li>
+</ul>
+<!-- Following snippet transcluded from references/footnotes.md with resolveMetalsmith.url(../references/footnotes.md) {"id":"references/footnotes.md","name":null,"origin":"https://github.com/SAFETAG/SAFETAG","origin_path":"master/en/references/footnotes.md"} -->
+<!-- Notes -->
+<!-- Penetration/Security/Risk Testing Standards / Guides -->
+<!-- Threat Modeling -->
+<!-- Facilitation -->
+<!-- Censorship Measurement -->
+<!-- ONI -->
+<!-- Country Infrastructure info -->
+<!-- Media / Speech Freedom Threats -->
+<!-- Human Rights and Governance-->
+<!-- Surveillance and Censorship -->
+<!-- Security Risks -->
+<!-- Malware and Threat reports -->
+<!-- Security Advisories -->
+<!-- Technical Training & Guides -->
+<!-- Tech adoption and usability -->
+<!-- Sections -->
+<!-- Appendices -->
+<!-- End of transcluded snippet from references/footnotes.md -->

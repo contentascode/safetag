@@ -1,0 +1,174 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expand when render expand with children --> then render default Expand with children 1`] = `
+<div
+  class=""
+  style="height:0;opacity:0;overflow:hidden;transition:height 400ms ease-in-out,opacity 400ms ease-in-out"
+>
+  Hello
+</div>
+`;
+
+exports[`Expand when render expand with open=true --> then render Expand with open styles 1`] = `
+<div
+  class=""
+  style="height:auto;opacity:1;overflow:unset;transition:height 400ms ease-in-out,opacity 400ms ease-in-out"
+>
+  Open true
+</div>
+`;
+
+exports[`Expand when set props two times true --> then Expand styles is open 1`] = `
+<Expand
+  className=""
+  duration={400}
+  easing="ease-in-out"
+  open={true}
+  styles={Object {}}
+  tag="div"
+  transitions={
+    Array [
+      "height",
+      "opacity",
+    ]
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "height": "auto",
+        "opacity": 1,
+        "overflow": "unset",
+        "transition": "height 400ms ease-in-out,opacity 400ms ease-in-out",
+      }
+    }
+  >
+    Toggle
+  </div>
+</Expand>
+`;
+
+exports[`Expand when toggle open from false to true --> then change Expand styles from close to open 1`] = `
+<Expand
+  className=""
+  duration={400}
+  easing="ease-in-out"
+  open={false}
+  styles={Object {}}
+  tag="div"
+  transitions={
+    Array [
+      "height",
+      "opacity",
+    ]
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "height": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+        "transition": "height 400ms ease-in-out,opacity 400ms ease-in-out",
+      }
+    }
+  >
+    Toggle
+  </div>
+</Expand>
+`;
+
+exports[`Expand when toggle open from false to true --> then change Expand styles from close to open 2`] = `
+<Expand
+  className=""
+  duration={400}
+  easing="ease-in-out"
+  open={true}
+  styles={Object {}}
+  tag="div"
+  transitions={
+    Array [
+      "height",
+      "opacity",
+    ]
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "height": 0,
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "height 400ms ease-in-out,opacity 400ms ease-in-out",
+      }
+    }
+  >
+    Toggle
+  </div>
+</Expand>
+`;
+
+exports[`Expand when toggle open from false to true --> then change Expand styles from close to open 3`] = `
+<Expand
+  className=""
+  duration={400}
+  easing="ease-in-out"
+  open={true}
+  styles={Object {}}
+  tag="div"
+  transitions={
+    Array [
+      "height",
+      "opacity",
+    ]
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "height": "auto",
+        "opacity": 1,
+        "overflow": "unset",
+        "transition": "height 400ms ease-in-out,opacity 400ms ease-in-out",
+      }
+    }
+  >
+    Toggle
+  </div>
+</Expand>
+`;
+
+exports[`Expand when toggle three times --> then Expand styles is open 1`] = `
+<Expand
+  className=""
+  duration={400}
+  easing="ease-in-out"
+  open={true}
+  styles={Object {}}
+  tag="div"
+  transitions={
+    Array [
+      "height",
+      "opacity",
+    ]
+  }
+>
+  <div
+    className=""
+    style={
+      Object {
+        "height": "auto",
+        "opacity": 1,
+        "overflow": "unset",
+        "transition": "height 400ms ease-in-out,opacity 400ms ease-in-out",
+      }
+    }
+  >
+    Toggle
+  </div>
+</Expand>
+`;
