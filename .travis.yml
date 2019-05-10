@@ -44,7 +44,7 @@ script:
 
 deploy:
   - provider: pages
-    local_dir: ../../../../.content/build
+    local_dir: /home/travis/.content/build
     skip_cleanup: true
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     on:
